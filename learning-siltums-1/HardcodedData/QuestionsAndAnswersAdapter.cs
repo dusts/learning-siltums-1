@@ -22,7 +22,7 @@ namespace learning_siltums_1.HardcodedData
             vh.Question.Text = mData.questionAndAnswersList[position].Question;
             vh.Answer.Text = mData.questionAndAnswersList[position].Answer;
             vh.Points.Text = mData.questionAndAnswersList[position].Points.ToString();
-            //vh.Image.Text = mData.questionAndAnswersList[position].AnswerImage;
+            //vh.Image.SetImageResource(Resource.Drawable.siltums1_dwg);
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
