@@ -22,11 +22,11 @@ namespace learning_siltums_1.HardcodedData
             vh.Question.Text = mData.questionAndAnswersList[position].Question;
             vh.Answer.Text = mData.questionAndAnswersList[position].Answer;
             vh.Points.Text = mData.questionAndAnswersList[position].Points.ToString();
-            //vh.Image.SetImageResource(Resource.Drawable.siltums1_dwg);
+            if (mData.questionAndAnswersList[position].AnswerImage > 0) vh.Image.SetImageResource(mData.questionAndAnswersList[position].AnswerImage);
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
-        {    
+        {
             // Inflate the CardView for the photo:
             View itemView = LayoutInflater.From(parent.Context).
                         Inflate(Resource.Layout.qna_item, parent, false);

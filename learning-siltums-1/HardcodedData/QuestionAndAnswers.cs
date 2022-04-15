@@ -5,7 +5,7 @@
         public int QuestionId { get; set; }
         public string Question { get; set; }
         public string Answer { get; set; }
-        public string AnswerImage { get; set; }
+        public int AnswerImage { get; set; }
         public int Points { get; set; }
     }
 }
