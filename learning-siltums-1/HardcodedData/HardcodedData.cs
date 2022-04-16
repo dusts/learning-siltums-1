@@ -5,10 +5,14 @@ namespace learning_siltums_1.HardcodedData
 {
     public class HardcodedData
     {
+        static int zBlank = Resource.Mipmap.blank;
+
         static string microChar = $"\u00b5"; // can't be subscript at the moment :/ // small mu char
         static string subscriptX = $"\u2093";
         static string smallNu_specificVolumeChar = $"\U0001D6CE";
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
+        static string smallPsiChar = $"\u03C8"; // ārējās iztvaikošanas siltums
+        static string smallRhoChar = $"\u03C1"; // iekšējās iztvaikošanas siltums
         static string primeChar = $"\u2032"; // prim
         static string doublePrimeChar = $"\u2033"; // 2prim
         static string triplePrimeChar = $"\u2034"; // 3prim
@@ -81,21 +85,21 @@ namespace learning_siltums_1.HardcodedData
         static string q26 = $"Ar ko atšķiras reāla gāze no ideālas?";
         static string a26 = $"Reālās gāzes no ideālajām gāzēm atšķiras galvenokārt ar to, ka molekulām ir masa un tilpums un starp tām pastāv mijiedarbības spēki.\n (65.lpp.)";
         static string q27 = $"Uzrakstīt Van der Vālsa vienādojumu reālai gāzei un paskaidrot tā locekļus";
-        static string a27 = $"";
+        static string a27 = $"Van der Vālsa vienādojums -> (p+(a/{smallNu_specificVolumeChar}{supscript2}))({smallNu_specificVolumeChar}-b)=RT.\n Tā kā reālo gāu molekulām ir tilums, tas it kā samazina gāzes aizņemto brīvo tilpumu {smallNu_specificVolumeChar} par kādu lielumu b.\n Starp gāzes molekulām darbojās savstarpējie pievilkšanās spēki, kas it kā palielina ārējo spiedienu. Van der Vālss pierādija, ka šo papildu spiedienu var izteikt kā a/{smallNu_specificVolumeChar}{supscript2}, kur a - koeficients.\n Tātad p+a/{smallNu_specificVolumeChar}{supscript2} ir gāzes spiediens + papildus spiediens, kas rodās no pievilkšanās spēkiem un {smallNu_specificVolumeChar}-b ir gāzes īpatnējais 'brīvais' tilpums no kura atņem gāzu molekulu tilpumu. R - gāzes individuālā konstante, T - gāzes temperatūra. (65.-66.lpp.)";
         static string q28 = $"Kas ir ūdens trīskāršais punkts?";
-        static string a28 = $"";
+        static string a28 = $"Noteiktā spiedienā un temperatūrā iestājas līdzsvars starp ūdens cieto fāzi (ledu), šķidrumu un tvaiku. (69.lpp.)";
         static string q29 = $"Kas ir pārkarsēts tvaiks?";
-        static string a29 = $"";
+        static string a29 = $"Pārkarsēts tvaiks ir tvaiks, kura temperatūra sāk paaugstināties virs iztvaikošanas (piesātināšanas) temperatūras. (70.lpp.)";
         static string q30 = $"Kas ir mitrs tvaiks?";
-        static string a30 = $"";
+        static string a30 = $"Mitrs tvaiks ir tvaiks kas satur gan sausu tvaiku, gan tvaikā nepārvērsa šķidruma daļiņas, t. i., visa šķidrā fāze nav pilnīgi iztvaikojusi un tvaika temperatūra atbilst vārīšanās temperatūrai dotajā spiedienā. (70.lpp.)";
         static string q31 = $"Kas ir sauss piesātināts tvaiks?";
-        static string a31 = $"";
-        static string q32 = $"Kādai vielas fāzei piemīt īpatnējie tilpumi, ko apzīmē ar: {smallNu_specificVolumeChar}’, {smallNu_specificVolumeChar}’’, {smallNu_specificVolumeChar}, {smallNu_specificVolumeChar}{subscriptX}?";
-        static string a32 = $"";
+        static string a31 = $"Sauss piesātināts tvaiks ir tvaiks kas nesatur tvaikā nepārvērsta šķitruma daļiņas, t. i., visa šķidrā fāze ir pilnībā iztvaikojusi un tvaika temperatūra atbilst vārīšanās temperatūrai dotajā spiedienā. (70.lpp.)";
+        static string q32 = $"Kādai vielas fāzei piemīt īpatnējie tilpumi, ko apzīmē ar: {smallNu_specificVolumeChar}{primeChar}, {smallNu_specificVolumeChar}{doublePrimeChar}, {smallNu_specificVolumeChar}, {smallNu_specificVolumeChar}{subscriptX}?";
+        static string a32 = $"{smallNu_specificVolumeChar}{primeChar} - verdošam šķidrumam;\n {smallNu_specificVolumeChar}{doublePrimeChar} - sausam piesātinātam tvaikam;\n {smallNu_specificVolumeChar} - pārkarsētam tvaikam;\n {smallNu_specificVolumeChar}{subscriptX} - mitram tvaikam.\n (71.lpp.)";
         static string q33 = $"Kas ir ūdens iztvaikošanas siltums?";
-        static string a33 = $"";
+        static string a33 = $"Iztvaikošanas siltums ir siltuma daudzumsr, kas jāpievada 1kg šķidruma (ūdens) piesātināšanas stāvoklī, lai to pilnīgi pārvērstu sausā piesātinātā tvaikā. r - J/kg. (73.lpp.)";
         static string q34 = $"Kas veido ūdens iztvaikošanas siltumu?";
-        static string a34 = $"";
+        static string a34 = $"Ūdens iztvaikošanas siltumu (r) veido iekšējās iztvaikošanas siltuma ({smallRhoChar}) un ārējā iztvaikošanas siltuma ({smallPsiChar}) summa.\n r=u{doublePrimeChar}-u{primeChar}+p({smallNu_specificVolumeChar}{doublePrimeChar}-{smallNu_specificVolumeChar}{primeChar} jeb r={smallRhoChar}+{smallPsiChar}). (73.lpp.)";
         static string q35 = $"Kāds ir un kam ir proporcionāls darbs un iekšējās enerģijas izmaiņa tvaikam izohoriskā procesā?";
         static string a35 = $"";
         static string q36 = $"Kāds ir un kam ir proporcionāls darbs un iekšējās enerģijas izmaiņa tvaikam adiabātiskā procesā";
@@ -229,104 +233,104 @@ namespace learning_siltums_1.HardcodedData
         {
             var res = new List<QuestionAndAnswers>()
             {
-                new QuestionAndAnswers(){ QuestionId = 1, Question = q1, Answer = a1, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 2, Question = q2, Answer = a2, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 3, Question = q3, Answer = a3, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 4, Question = q4, Answer = a4, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 5, Question = q5, Answer = a5, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 6, Question = q6, Answer = a6, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 7, Question = q7, Answer = a7, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 8, Question = q8, Answer = a8, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 9, Question = q9, Answer = a9, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 10, Question = q10, Answer = a10, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 11, Question = q11, Answer = a11, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 12, Question = q12, Answer = a12, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 13, Question = q13, Answer = a13, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 14, Question = q14, Answer = a14, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 15, Question = q15, Answer = a15, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 16, Question = q16, Answer = a16, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 17, Question = q17, Answer = a17, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 18, Question = q18, Answer = a18, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 19, Question = q19, Answer = a19, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 20, Question = q20, Answer = a20, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 21, Question = q21, Answer = a21, AnswerImage = 0, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 1, Question = q1, Answer = a1, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 2, Question = q2, Answer = a2, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 3, Question = q3, Answer = a3, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 4, Question = q4, Answer = a4, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 5, Question = q5, Answer = a5, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 6, Question = q6, Answer = a6, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 7, Question = q7, Answer = a7, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 8, Question = q8, Answer = a8, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 9, Question = q9, Answer = a9, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 10, Question = q10, Answer = a10, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 11, Question = q11, Answer = a11, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 12, Question = q12, Answer = a12, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 13, Question = q13, Answer = a13, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 14, Question = q14, Answer = a14, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 15, Question = q15, Answer = a15, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 16, Question = q16, Answer = a16, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 17, Question = q17, Answer = a17, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 18, Question = q18, Answer = a18, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 19, Question = q19, Answer = a19, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 20, Question = q20, Answer = a20, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 21, Question = q21, Answer = a21, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 22, Question = q22, Answer = a22, AnswerImage = z22, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 23, Question = q23, Answer = a23, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 24, Question = q24, Answer = a24, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 25, Question = q25, Answer = a25, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 26, Question = q26, Answer = a26, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 27, Question = q27, Answer = a27, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 28, Question = q28, Answer = a28, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 29, Question = q29, Answer = a29, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 30, Question = q30, Answer = a30, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 31, Question = q31, Answer = a31, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 32, Question = q32, Answer = a32, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 33, Question = q33, Answer = a33, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 34, Question = q34, Answer = a34, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 35, Question = q35, Answer = a35, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 36, Question = q36, Answer = a36, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 37, Question = q37, Answer = a37, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 38, Question = q38, Answer = a38, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 39, Question = q39, Answer = a39, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 40, Question = q40, Answer = a40, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 41, Question = q41, Answer = a41, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 42, Question = q42, Answer = a42, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 43, Question = q43, Answer = a43, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 45, Question = q45, Answer = a45, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 46, Question = q46, Answer = a46, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 47, Question = q47, Answer = a47, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 48, Question = q48, Answer = a48, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 49, Question = q49, Answer = a49, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 50, Question = q50, Answer = a50, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 51, Question = q51, Answer = a51, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 52, Question = q52, Answer = a52, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 53, Question = q53, Answer = a53, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 54, Question = q54, Answer = a54, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 55, Question = q55, Answer = a55, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 56, Question = q56, Answer = a56, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 57, Question = q57, Answer = a57, AnswerImage = 0, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 58, Question = q58, Answer = a58, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 59, Question = q59, Answer = a59, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 60, Question = q60, Answer = a60, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 61, Question = q61, Answer = a61, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 62, Question = q62, Answer = a62, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 63, Question = q63, Answer = a63, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 64, Question = q64, Answer = a64, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 65, Question = q65, Answer = a65, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 66, Question = q66, Answer = a66, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 67, Question = q67, Answer = a67, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 68, Question = q68, Answer = a68, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 69, Question = q69, Answer = a69, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 70, Question = q70, Answer = a70, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 71, Question = q71, Answer = a71, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 72, Question = q72, Answer = a72, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 73, Question = q73, Answer = a73, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 74, Question = q74, Answer = a74, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 75, Question = q75, Answer = a75, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 76, Question = q76, Answer = a76, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 77, Question = q77, Answer = a77, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 78, Question = q78, Answer = a78, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 79, Question = q79, Answer = a79, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 80, Question = q80, Answer = a80, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 81, Question = q81, Answer = a81, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 82, Question = q82, Answer = a82, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 83, Question = q83, Answer = a83, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 84, Question = q84, Answer = a84, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 85, Question = q85, Answer = a85, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 86, Question = q86, Answer = a86, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 87, Question = q87, Answer = a87, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 88, Question = q88, Answer = a88, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 89, Question = q89, Answer = a89, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 90, Question = q90, Answer = a90, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 91, Question = q91, Answer = a91, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 92, Question = q92, Answer = a92, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 93, Question = q93, Answer = a93, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 94, Question = q94, Answer = a94, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 95, Question = q95, Answer = a95, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 96, Question = q96, Answer = a96, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 97, Question = q97, Answer = a97, AnswerImage = 0, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 98, Question = q98, Answer = a98, AnswerImage = 0, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 23, Question = q23, Answer = a23, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 24, Question = q24, Answer = a24, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 25, Question = q25, Answer = a25, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 26, Question = q26, Answer = a26, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 27, Question = q27, Answer = a27, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 28, Question = q28, Answer = a28, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 29, Question = q29, Answer = a29, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 30, Question = q30, Answer = a30, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 31, Question = q31, Answer = a31, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 32, Question = q32, Answer = a32, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 33, Question = q33, Answer = a33, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 34, Question = q34, Answer = a34, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 35, Question = q35, Answer = a35, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 36, Question = q36, Answer = a36, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 37, Question = q37, Answer = a37, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 38, Question = q38, Answer = a38, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 39, Question = q39, Answer = a39, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 40, Question = q40, Answer = a40, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 41, Question = q41, Answer = a41, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 42, Question = q42, Answer = a42, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 43, Question = q43, Answer = a43, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 45, Question = q45, Answer = a45, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 46, Question = q46, Answer = a46, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 47, Question = q47, Answer = a47, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 48, Question = q48, Answer = a48, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 49, Question = q49, Answer = a49, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 50, Question = q50, Answer = a50, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 51, Question = q51, Answer = a51, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 52, Question = q52, Answer = a52, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 53, Question = q53, Answer = a53, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 54, Question = q54, Answer = a54, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 55, Question = q55, Answer = a55, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 56, Question = q56, Answer = a56, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 57, Question = q57, Answer = a57, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 58, Question = q58, Answer = a58, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 59, Question = q59, Answer = a59, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 60, Question = q60, Answer = a60, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 61, Question = q61, Answer = a61, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 62, Question = q62, Answer = a62, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 63, Question = q63, Answer = a63, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 64, Question = q64, Answer = a64, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 65, Question = q65, Answer = a65, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 66, Question = q66, Answer = a66, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 67, Question = q67, Answer = a67, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 68, Question = q68, Answer = a68, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 69, Question = q69, Answer = a69, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 70, Question = q70, Answer = a70, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 71, Question = q71, Answer = a71, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 72, Question = q72, Answer = a72, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 73, Question = q73, Answer = a73, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 74, Question = q74, Answer = a74, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 75, Question = q75, Answer = a75, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 76, Question = q76, Answer = a76, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 77, Question = q77, Answer = a77, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 78, Question = q78, Answer = a78, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 79, Question = q79, Answer = a79, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 80, Question = q80, Answer = a80, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 81, Question = q81, Answer = a81, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 82, Question = q82, Answer = a82, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 83, Question = q83, Answer = a83, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 84, Question = q84, Answer = a84, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 85, Question = q85, Answer = a85, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 86, Question = q86, Answer = a86, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 87, Question = q87, Answer = a87, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 88, Question = q88, Answer = a88, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 89, Question = q89, Answer = a89, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 90, Question = q90, Answer = a90, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 91, Question = q91, Answer = a91, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 92, Question = q92, Answer = a92, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 93, Question = q93, Answer = a93, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 94, Question = q94, Answer = a94, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 95, Question = q95, Answer = a95, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 96, Question = q96, Answer = a96, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 97, Question = q97, Answer = a97, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 98, Question = q98, Answer = a98, AnswerImage = zBlank, Points = 1 },
             };
 
             return res;

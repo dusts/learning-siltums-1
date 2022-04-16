@@ -18,11 +18,10 @@ namespace learning_siltums_1.HardcodedData
         {
             QnAViewHolder vh = holder as QnAViewHolder;
 
-            //vh.Image.SetImageResource(mData.questionAndAnswersList[position].QuestionId);
             vh.Question.Text = mData.questionAndAnswersList[position].Question;
             vh.Answer.Text = mData.questionAndAnswersList[position].Answer;
             vh.Points.Text = mData.questionAndAnswersList[position].Points.ToString();
-            if (mData.questionAndAnswersList[position].AnswerImage > 0) vh.Image.SetImageResource(mData.questionAndAnswersList[position].AnswerImage);
+            vh.Image.SetImageResource(mData.questionAndAnswersList[position].AnswerImage);
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
