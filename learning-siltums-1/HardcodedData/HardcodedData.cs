@@ -7,12 +7,16 @@ namespace learning_siltums_1.HardcodedData
     {
         static int zBlank = Resource.Mipmap.blank;
 
+        static string needsSuperscript = $"\u04FE";
+        static string needsSubscript = $"\u04FF";
+
         static string microChar = $"\u00b5"; // can't be subscript at the moment :/ // small mu char
         static string subscriptX = $"\u2093";
         static string smallNu_specificVolumeChar = $"\U0001D6CE";
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
         static string smallPsiChar = $"\u03C8"; // ārējās iztvaikošanas siltums
         static string smallRhoChar = $"\u03C1"; // iekšējās iztvaikošanas siltums
+        static string smallPhiChar = $"\u03C6"; // relatīvais gaisa mitrums
         static string primeChar = $"\u2032"; // prim
         static string doublePrimeChar = $"\u2033"; // 2prim
         static string triplePrimeChar = $"\u2034"; // 3prim
@@ -95,19 +99,19 @@ namespace learning_siltums_1.HardcodedData
         static string q31 = $"Kas ir sauss piesātināts tvaiks?";
         static string a31 = $"Sauss piesātināts tvaiks ir tvaiks kas nesatur tvaikā nepārvērsta šķitruma daļiņas, t. i., visa šķidrā fāze ir pilnībā iztvaikojusi un tvaika temperatūra atbilst vārīšanās temperatūrai dotajā spiedienā. (70.lpp.)";
         static string q32 = $"Kādai vielas fāzei piemīt īpatnējie tilpumi, ko apzīmē ar: {smallNu_specificVolumeChar}{primeChar}, {smallNu_specificVolumeChar}{doublePrimeChar}, {smallNu_specificVolumeChar}, {smallNu_specificVolumeChar}{subscriptX}?";
-        static string a32 = $"{smallNu_specificVolumeChar}{primeChar} - verdošam šķidrumam;\n {smallNu_specificVolumeChar}{doublePrimeChar} - sausam piesātinātam tvaikam;\n {smallNu_specificVolumeChar} - pārkarsētam tvaikam;\n {smallNu_specificVolumeChar}{subscriptX} - mitram tvaikam.\n (71.lpp.)";
+        static string a32 = $"{smallNu_specificVolumeChar}{primeChar} - īpatnējais tilpums verdošam šķidrumam;\n {smallNu_specificVolumeChar}{doublePrimeChar} - īpatnējais tilpums sausam piesātinātam tvaikam;\n {smallNu_specificVolumeChar} - īpatnējais tilpums pārkarsētam tvaikam;\n {smallNu_specificVolumeChar}{subscriptX} - īpatnējais tilpums mitram tvaikam.\n (71.lpp.)";
         static string q33 = $"Kas ir ūdens iztvaikošanas siltums?";
         static string a33 = $"Iztvaikošanas siltums ir siltuma daudzumsr, kas jāpievada 1kg šķidruma (ūdens) piesātināšanas stāvoklī, lai to pilnīgi pārvērstu sausā piesātinātā tvaikā. r - J/kg. (73.lpp.)";
         static string q34 = $"Kas veido ūdens iztvaikošanas siltumu?";
         static string a34 = $"Ūdens iztvaikošanas siltumu (r) veido iekšējās iztvaikošanas siltuma ({smallRhoChar}) un ārējā iztvaikošanas siltuma ({smallPsiChar}) summa.\n r=u{doublePrimeChar}-u{primeChar}+p({smallNu_specificVolumeChar}{doublePrimeChar}-{smallNu_specificVolumeChar}{primeChar} jeb r={smallRhoChar}+{smallPsiChar}). (73.lpp.)";
         static string q35 = $"Kāds ir un kam ir proporcionāls darbs un iekšējās enerģijas izmaiņa tvaikam izohoriskā procesā?";
-        static string a35 = $"";
+        static string a35 = $"Izohoriskā procesā tilpums nemainās ({smallNu_specificVolumeChar}=const), tāpēc darbs netiek veikts (l=0). Visu procesa siltumu patērē iekšējās enerģijas izmaiņai.\n l=0; q=u{subscript2}-u{subscript1}; u=h-p{smallNu_specificVolumeChar}; q=h{subscript2}-p{subscript2}{smallNu_specificVolumeChar}-(h{subscript1}-p{subscript1}{smallNu_specificVolumeChar}).\n l - padarītais darbs, u - iekšējā enerģija, q - pievadītais siltums, h - entalpija, p - spiediens, {smallNu_specificVolumeChar} - īpatnējais tilpums. (76.lpp.?)";
         static string q36 = $"Kāds ir un kam ir proporcionāls darbs un iekšējās enerģijas izmaiņa tvaikam adiabātiskā procesā";
-        static string a36 = $"";
+        static string a36 = $"Tvaika pastrādātais darbs -> l=-(u{subscript2}-u{subscript1})=h{subscript1}-h{subscript2}-(p{subscript1}{smallNu_specificVolumeChar}{subscript1}-p{subscript2}{smallNu_specificVolumeChar}{subscript2}). l - darbs, u - iekšējā enerģija, h - entalpija, p - spiediens, {smallNu_specificVolumeChar} - īpatnējais tilpums.\n Darbs ir tieši pretējs iekšējo enerģiju starpībai. Iekšējā enerģija..... (79.lpp.)";
         static string q37 = $"Kas ir rasas punkts mitram gaisam?";
-        static string a37 = $"";
+        static string a37 = $"Temperatūru, kurā gaisā esošais ūdens tvaiks kļūst piesātināts, sauc par rasas punktu.";
         static string q38 = $"Kas ir gaisa relatīvais mitrums, mērvienība?";
-        static string a38 = $"";
+        static string a38 = $"Par gaisa relatīvo mitrumu {smallPhiChar} sauc absolūtā mitruma {smallRhoChar}{needsSubscript}d{needsSubscript}... ";
         static string q39 = $"Kas ir gaisa absolūtais mitrums, mērvienība?";
         static string a39 = $"";
         static string q40 = $"Kas ir gaisa mitruma saturs, mērvienība?";
