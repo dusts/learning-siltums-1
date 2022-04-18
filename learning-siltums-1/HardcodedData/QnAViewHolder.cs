@@ -8,6 +8,7 @@ namespace learning_siltums_1.HardcodedData
 {
     internal class QnAViewHolder : RecyclerView.ViewHolder
     {
+        public TextView QuestionId { get; private set; }
         public TextView Question { get; private set; }
         public TextView Answer { get; private set; }
         public TextView Points { get; private set; }
@@ -20,6 +21,7 @@ namespace learning_siltums_1.HardcodedData
             Question = itemView.FindViewById<TextView>(Resource.Id.qna_item_question);
             Answer = itemView.FindViewById<TextView>(Resource.Id.qna_item_answer);
             Points = itemView.FindViewById<TextView>(Resource.Id.qna_item_points);
+            QuestionId = itemView.FindViewById<TextView>(Resource.Id.qna_item_id);
         }
     }
 }

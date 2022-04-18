@@ -23,6 +23,7 @@ namespace learning_siltums_1.HardcodedData
         {
             QnAViewHolder vh = holder as QnAViewHolder;
 
+            vh.QuestionId.Text = $"{mData.questionAndAnswersList[position].QuestionId}. jautājums";
             vh.Question.TextFormatted = GetFormatedText(mData.questionAndAnswersList[position].Question);
             vh.Answer.TextFormatted = GetFormatedText(mData.questionAndAnswersList[position].Answer);
             vh.Points.Text = mData.questionAndAnswersList[position].Points.ToString();
@@ -79,6 +80,7 @@ namespace learning_siltums_1.HardcodedData
                 DeleteSpanChars(sb, subSpanCount, subIndexDictionary);
             }
 
+            sb.Append("\n");
             return sb;
         }
 
@@ -107,13 +109,12 @@ namespace learning_siltums_1.HardcodedData
             int indexStart;
             int indexEnd;
 
-            for (int i = 0; i < spanCount; i++)
+            for (int i = spanCount - 1; i > -1; i--)
             {
                 indexStart = indexDictionary[i, 0];
                 indexEnd = indexDictionary[i, 1];
                 sb.Delete(indexStart - 1, indexStart);
                 sb.Delete(indexEnd - 1, indexEnd);
-                sb.Append("\n");
             }
         }
     }

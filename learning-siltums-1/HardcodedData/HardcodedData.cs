@@ -10,13 +10,16 @@ namespace learning_siltums_1.HardcodedData
         static string needsSuperscript = $"\u04FE";
         static string needsSubscript = $"\u04FF";
 
-        static string smallMuChar = $"\u00b5"; // micro
         static string subscriptX = $"\u2093";
-        static string smallNu_specificVolumeChar = $"\U0001D6CE";
+        static string capitalPhiChar = $"\u03A6"; // ņūtona vienādojumam
+        static string smallAlphaChar = $"\u03B1"; // siltumatdeves koeficients
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
+        static string smallLambda = $"\u03BB"; // siltumvadītspējas koeficients
+        static string smallMuChar = $"\u00b5"; // micro
+        static string smallNu_specificVolumeChar = $"\U0001D6CE";
+        static string smallPhiChar = $"\u03C6"; // relatīvais gaisa mitrums
         static string smallPsiChar = $"\u03C8"; // ārējās iztvaikošanas siltums
         static string smallRhoChar = $"\u03C1"; // iekšējās iztvaikošanas siltums
-        static string smallPhiChar = $"\u03C6"; // relatīvais gaisa mitrums
         static string primeChar = $"\u2032"; // prim
         static string doublePrimeChar = $"\u2033"; // 2prim
         static string triplePrimeChar = $"\u2034"; // 3prim
@@ -139,54 +142,54 @@ namespace learning_siltums_1.HardcodedData
         static string a48 = $"-> Process 3-4. Kondensāts tiek padots/iesūknēts katlā-ekonomaizerā.\n -> Process 4-5. Tas uzsilst līdz iztvaikošanas temperatūrai.\n -> Process 5-6. Notiek iztvaikošana iztvaicētājā.\n -> Process 6-1. Tvaiks tiek pārkarsēts, tas ir, tiek pacelta tvaika temperatūra.\n -> Process 1-2. Tvaiks nonāk tvaika turbīnā un griež elektroģeneratoru.\n -> Process 2-3. Kondensātorā tvaiks atdod pārpalikušo siltumu un kondensējas. Un tiek novadīts uz kondensāta tvertni.\n (107-109. lpp. + no pierakstiem)";
         static int z48 = Resource.Mipmap.blank;
         static string q49 = $"Uzzīmēt tvaika iekārtas ciklu ar atkārtotu tvaika pārkarsēšanu T-s koordinātu sistēmā, paskaidrot līknes";
-        static string a49 = $"";
+        static string a49 = $"-> Process 3-4. Kondensāts tiek padots/iesūknēts katlā-ekonomaizerā.\n -> Process 4-5. Tas uzsilst līdz iztvaikošanas temperatūrai.\n -> Process 5-6. Notiek iztvaikošana iztvaicētājā.\n -> Process 6-1. Tvaiks tiek pārkarsēts, tas ir, tiek pacelta tvaika temperatūra.\n -> Process 1-2{primeChar}. Tvaiks nonāk tvaika turbīnā un griež elektroģeneratoru.\n -> Process 2{primeChar}-1{primeChar}. Tvaiks tiek pārkarsēts.\n -> Process 1{primeChar}-2. Tvaiks nonāk tvaika turbīnā un griež elektroģeneratoru.\n -> Process 2-3. Kondensātorā tvaiks atdod pārpalikušo siltumu un kondensējas. Un tiek novadīts uz kondensāta tvertni.\n (111-113. lpp. + no pierakstiem)";
         static int z49 = Resource.Mipmap.blank;
         static string q50 = $"Uzzīmēt saldēšanas iekārtas ideālo ciklu T-s koordinātu sistēmā, paskaidrot līknes";
-        static string a50 = $"";
+        static string a50 = $"-> Process 4-1. Aukstuma aģents ar zemu temperatūru ieplūst saldēšanas kamerā un uzņem siltumu no dzesējamā materiāla.\n -> Process 1-2. Aukstuma aģents tiek adiabātiski saspiests kompresorā, pieaug temperatūra.\n -> Process 2-3. Aukstuma aģents izotermiski dzesētājā atdod siltumu apkārtējai videi.\n -> Process 3-4. Aukstuma aģents adiabātiski izplešas detanderā, samazinās spiediens un temperatūra.\n ";
         static int z50 = Resource.Mipmap.blank;
         static string q51 = $"Uzzīmēt gāzes cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
-        static string a51 = $"";
+        static string a51 = $"SK - saldēšanas kamera; K - kompresors; Dz - dzesētājs; Dt - detanders (izplešanās trauks). (121.-123. lpp. + no pierakstiem)";
         static int z51 = Resource.Mipmap.blank;
         static string q52 = $"Uzzīmēt saldēšanas iekārtas gāzes ciklu T-s koordinātu sistēmā, paskaidrot līknes";
-        static string a52 = $"";
+        static string a52 = $"-> Process 1-2. Notiek gāzes adiabāta saspiešana kompresorā.\n -> Process 2-3. Izobārā procesā dzesētājā novada siltumu q{subscript1}. Siltuma novadīšanu gāzei nevar veikt izotermi, kā tas ir Karno ciklā, bet process noris izobāri, pazeminoties gāzes temperatūrai.\n -> Process 3-4. Gāzes detanderā adiabāti izplešas, tā rezultātā pazeminās gāzes spiediens un temperatūra.\n -> Process 4-1. Atdzisusī gāze siltumapaiņas aparātā - saldēšanas kamerā - uzņem siltumu no dzesējamās vides (izobāra), un tās temperatūra paaugstinās.\n (122. lpp.)";
         static int z52 = Resource.Mipmap.blank;
         static string q53 = $"Uzzīmēt tvaika cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
-        static string a53 = $"";
+        static string a53 = $"K - kompresors; Kd - kondensators; Dz - dzesētājs; Dr - droselēšanas ventilis (drosele); Sk - saldēšanas kamera.\n (123. lpp.)";
         static int z53 = Resource.Mipmap.blank;
         static string q54 = $"Uzzīmēt saldēšanas iekārtas tvaika ciklu T-s koordinātu sistēmā, paskaidrot līknes";
-        static string a54 = $"";
+        static string a54 = $"-> Process 4-1. Aukstuma aģents šķidrā veidā ieplūst saldēšanas kamerā, uzņem siltumu no dzesējamā materiāla un iztvaiko.\n -> Process 1-2. Aukstuma aģenta tvaiki tiek saspiesti, pieaug spiediens un temperatūra.\n -> Process 2-2{primeChar}. Aukstuma aģents atdod siltumu kondensatorā, atdziest un kondensējas.\n -> Process 2{doublePrimeChar}-3. Aukstuma aģents atdod siltumu dzesētājā, samazinās temperatūra.\n -> Process 3-4. Droselē aukstuma aģentam ievērojami samazinās spiediens un temperatūra.\n (123.-123. lpp. + no pierakstiem)";
         static int z54 = Resource.Mipmap.blank;
         static string q55 = $"Paskaidrot saldēšanas iekārtas termodinamiskos darbības principus";
-        static string a55 = $"";
+        static string a55 = $"Gāze ar kompresora palīdzību tiek saspiesta, tā palielinot spiedienu un samazinot temperatūru. Tad tiek aizvadīta uz dzesēšanas kameru, kur tiek uzņemts siltums, ko pēc tam izvada ārā.\n (no pierakstiem)";
         static string q56 = $"Uzzīmēt siltumsūkņa shēmu, nosaukt sastāvdaļas";
-        static string a56 = $"";
+        static string a56 = $"1 - kompresors; 2 - kondensators; 3 - droselēšanas ventīlis (drosele); 4 - iztvaikotājs; 5 - dabas siltuma avots; 6 - siltumnesēja cirkulācijas sūknis; 7 - siltumtīkls; 8 - cirkulācijas sūknis; 9 - patērētāji.\n (no pierakstiem)";
         static int z56 = Resource.Mipmap.blank;
         static string q57 = $"Paskaidrot siltumsūkņa termodinamiskos darbības principus";
-        static string a57 = $"";
+        static string a57 = $"Siltumsūknis darbojas pēc apgrieztā termodinamiskā cikla (apgrieztā Karno cikla), tas saņem siltumu no apkārtējās vides, ciklā patērē darbu un nodod tālāk siltumu.\n (šis liekas tāds, nepilnīgs...ņemts no pierakstiem)";
         static string q58 = $"Kas ir siltumapmaiņa?";
-        static string a58 = $"";
+        static string a58 = $"Par siltumapmaiņu sauc siltuma enerģijas izplatīšanās (pārneses) procesu ķermeņos (ciets, šķidrs, gāzveida) vai ķermeņu kopā - sistēmā. (134. lpp.)";
         static string q59 = $"Kādos veidos notiek siltumapmaiņa?";
-        static string a59 = $"";
+        static string a59 = $"-> Siltumvadīšana\n -> Siltuma konvekcija\n -> Starošanās\n (134. lpp.)";
         static string q60 = $"Kā tiek pārnesta siltuma enerģija vadīšanā?";
-        static string a60 = $"";
+        static string a60 = $"Siltumvadīšanā enerģija tiek ārnesta, saskaroties molekulām un atomiem, kā arī difundējot vielas mikrodaļiņām (molekulām, atomiem un elektroniem).\n (134. lpp.)";
         static string q61 = $"Kā tiek pārnesta siltuma enerģija konvekcijā?";
-        static string a61 = $"";
+        static string a61 = $"Siltuma konvekcija notiek tikai gāzēs un šķidrumos, kad pārvietojas un sajaucas lielas molekulu grupas resp. šķidruma vai gāzes daļas ar dažādām temperatūrām.\n (134. lpp.)";
         static string q62 = $"Kā tiek pārnesta siltuma enerģija starošanā?";
-        static string a62 = $"";
+        static string a62 = $"Siltuma starošanā viens ķermenis daļu iekšējās enerģijas atdod citam ķermenim ar elektromagnētisko viļņu starpniecību.\n (135. lpp.)";
         static string q63 = $"Kas ir temperatūras lauks?";
-        static string a63 = $"";
+        static string a63 = $"Temperatūras vērtību kopumu telpā (ķermenī) jebkurā laika momentā sauc par temperatūras lauku.\n (135. lpp.)";
         static string q64 = $"Kas ir stacionārs un nestacionārs temperatūras lauks?";
-        static string a64 = $"";
+        static string a64 = $"Ja temperatūra atsevišķos ķermeņa punktos laikā nemainās, temperatūras lauks ir stacionārs; ja turpretim temperatūra mainās, lauks ir stacionārs.\n (135. lpp.)";
         static string q65 = $"Ko raksturo temperatūras gradients?";
-        static string a65 = $"";
+        static string a65 = $"Temperatūras pieauguma ātrumu raksturo temperatūras gradients.\n (136. lpp.)";
         static string q66 = $"Kas ir siltumvadītspējas koeficients?";
-        static string a66 = $"";
+        static string a66 = $"Siltumvadītspējas koeficients {smallLambda} raksturo vielas spēju vadīt siltumu un skaitliski izsaka to siltuma daudzumu, kas 1 sekundē izplūst caur 1m{supscript2} lielu virsmu, ja temperatūras gradients ir 1 K/m.\n (137. lpp.)";
         static string q67 = $"Uzskaitīt sistēmu viennozīmīguma nosacījumus";
-        static string a67 = $"";
+        static string a67 = $"1) Ģeometriskie nosacījumi;\n 2) fizikālie nosacījumi;\n 3) laika nosacījumi jeb sākumnosacījumi;\n 4) pirmās kārtas robežnosacījumi;\n 5) otrās kārtas robežnosacījumi;\n 6) trešās kārtas robežnosacījumi.";
         static string q68 = $"Uzrakstīt Ņūtona vienādojumu siltuma plūsmas aprēķinam";
-        static string a68 = $"";
+        static string a68 = $"{capitalPhiChar}={smallAlphaChar}S(T{subscript1}-T{subscript2}), kur T{subscript1} un T{subscript2} - sienas virsmas un siltumnesēja temperatūras; {smallAlphaChar} - siltumatdeves koeficients; {capitalPhiChar} - siltuma plūsma.\n (142. lpp.)";
         static string q69 = $"Kas ir siltumatdeves koeficients?";
-        static string a69 = $"";
+        static string a69 = $"{smallAlphaChar} - siltumatdeves koeficients (W/(m{supscript2}K)), kas rāda, kāds ir siltuma daudzums laika vienībā no sienas virsmas 1m{supscript2} tiek atdots šķidrumam (vai otrādi - no šķidruma sienai), ja temperatūru starpība starp šķidrumu un sienas virsmu ir 1K.\n (142. lpp.)";
         static string q70 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur plāksni pie trešās kārtas robežnosacījumiem";
         static string a70 = $"";
         static int z70 = Resource.Mipmap.blank;
@@ -299,7 +302,7 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 41, Question = q41, Answer = a41, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 42, Question = q42, Answer = a42, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 43, Question = q43, Answer = a43, AnswerImage = z43, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = z43, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = z44, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 45, Question = q45, Answer = a45, AnswerImage = z45, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 46, Question = q46, Answer = a46, AnswerImage = z46, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 47, Question = q47, Answer = a47, AnswerImage = z47, Points = 2 },
