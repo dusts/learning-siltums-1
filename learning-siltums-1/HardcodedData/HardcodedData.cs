@@ -10,7 +10,7 @@ namespace learning_siltums_1.HardcodedData
         static string needsSuperscript = $"\u04FE";
         static string needsSubscript = $"\u04FF";
 
-        static string microChar = $"\u00b5"; // can't be subscript at the moment :/ // small mu char
+        static string smallMuChar = $"\u00b5"; // micro
         static string subscriptX = $"\u2093";
         static string smallNu_specificVolumeChar = $"\U0001D6CE";
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
@@ -70,7 +70,7 @@ namespace learning_siltums_1.HardcodedData
         static string q17 = $"Kas ir īpatnējā siltumietilpība, mērvienība?";
         static string a17 = $"Par vielas īpatnējo siltumietilpību (siltumkapacitāti) sauc siltuma daudzumu, kas jāpievada vielas masas vienībai, lai tās temperatūru paagustinātu par vienu kelvinu (grādu).\n (26.lpp.)";
         static string q18 = $"Kādi ir īpatnējās siltumietilpības veidi, mērvienības?";
-        static string a18 = $"1) masas īpatnējā siltumietilpība, apzīmē ar c, mērvienība(dimensija) - J/(kg*K);\n2) tilpuma īpatnējā siltumietilpība, apzīmē ar c', mērvienība (dimensija) - J/(m{supscript3}*K);\n3) molārā īpatnējā siltumietilpība, apzīmē ar c{microChar}, mērvienība (dimensija) - J/(mol*K).\n (26.lpp.)";
+        static string a18 = $"1) masas īpatnējā siltumietilpība, apzīmē ar c, mērvienība(dimensija) - J/(kg*K);\n2) tilpuma īpatnējā siltumietilpība, apzīmē ar c', mērvienība (dimensija) - J/(m{supscript3}*K);\n3) molārā īpatnējā siltumietilpība, apzīmē ar c{needsSubscript}{smallMuChar}{needsSubscript}, mērvienība (dimensija) - J/(mol*K).\n (26.lpp.)";
         static string q19 = $"Pirmais termodinamikas likums";
         static string a19 = $"Pirmais termodinamikas likums ir enerģjas nezūdamības likuma atsevišķs gadījums, kas iegūts, piemērojot to enerģijas pārejas siltuma un darba formām. Siltums un darbs jāuzskata par enerģijas pārejas un pastāvēšanas veidiem termodinamiskā procesa gaidā. Šie enerģijas veidi noteiktos apstākļos var pārveidoties cits citā. Saskaņā ar enerģijas nezūdamības likumu visu enerģijas veidu summa izolētā sistēmā paliek bez izmaiņām.\n (28.lpp.)";
         static string q20 = $"Nosaukt termodinamikas pamatprocesus";
@@ -109,45 +109,58 @@ namespace learning_siltums_1.HardcodedData
         static string q36 = $"Kāds ir un kam ir proporcionāls darbs un iekšējās enerģijas izmaiņa tvaikam adiabātiskā procesā";
         static string a36 = $"Tvaika pastrādātais darbs -> l=-(u{subscript2}-u{subscript1})=h{subscript1}-h{subscript2}-(p{subscript1}{smallNu_specificVolumeChar}{subscript1}-p{subscript2}{smallNu_specificVolumeChar}{subscript2}). l - darbs, u - iekšējā enerģija, h - entalpija, p - spiediens, {smallNu_specificVolumeChar} - īpatnējais tilpums.\n Darbs ir tieši pretējs iekšējo enerģiju starpībai. Iekšējā enerģija..... (79.lpp.)";
         static string q37 = $"Kas ir rasas punkts mitram gaisam?";
-        static string a37 = $"Temperatūru, kurā gaisā esošais ūdens tvaiks kļūst piesātināts, sauc par rasas punktu.";
+        static string a37 = $"Temperatūru, kurā gaisā esošais ūdens tvaiks kļūst piesātināts, sauc par rasas punktu. (80. lpp.)";
         static string q38 = $"Kas ir gaisa relatīvais mitrums, mērvienība?";
-        static string a38 = $"Par gaisa relatīvo mitrumu {smallPhiChar} sauc absolūtā mitruma {smallRhoChar}{needsSubscript}d{needsSubscript}... ";
+        static string a38 = $"Par gaisa relatīvo mitrumu {smallPhiChar} sauc absolūtā mitruma {smallRhoChar}{needsSubscript}d{needsSubscript} attiecību pret maksimāli iespējamo gaisa mitrumu {smallRhoChar}{needsSubscript}s{needsSubscript} attiecīgajā temperatūrā un spiedienā, tas ir, {smallPhiChar} = {smallRhoChar}{needsSubscript}d{needsSubscript}/{smallRhoChar}{needsSubscript}s{needsSubscript}.\n Izsakot {smallRhoChar}{needsSubscript}d{needsSubscript} un {smallRhoChar}{needsSubscript}s{needsSubscript} no gāzu stāvokļa vienādojuma, iegūst {smallPhiChar} = p{needsSubscript}d{needsSubscript}/p{needsSubscript}s{needsSubscript}.\n Mērvienības nav, {smallPhiChar} ir koeficients. (80.-81. lpp.)";
         static string q39 = $"Kas ir gaisa absolūtais mitrums, mērvienība?";
-        static string a39 = $"";
+        static string a39 = $"Par absolūto gaisa mitrumu sauc kilogramos izteiktu ūdens tvaika masu vienā kubikmetrā gaisa. Tādejāti tas ir gaisā esošā ūdens tvaika blīvums {smallRhoChar}{needsSubscript}d{needsSubscript} (kg/m{supscript3}). (80. lpp.)";
         static string q40 = $"Kas ir gaisa mitruma saturs, mērvienība?";
-        static string a40 = $"";
+        static string a40 = $"Gaisa mitruma saturs ir gaisā esošā ūdens tvaika masas attiecība pret sausā gaisa masu. Citiem vārdiem sakot, mitruma saturs ir ūdens tvaika masa vienā kilogrammā sausa gaisa. Mitruma saturu, izsakot kg, parasti apzīmē ar x.\n Mitruma saturs ir koeficients, nav mērvienības.\n Apzīmē ar d, ja izsaka kā g/kg. (81. lpp.)";
         static string q41 = $"Ko sauc par gāzi tvaika-gāzes maisījumā?";
-        static string a41 = $"";
+        static string a41 = $"Par gāzi sauc tās vielas, kas dotajos apstākļos nevar kondesēties. (no pierakstiem)";
         static string q42 = $"Ko sauc par tvaiku tvaika-gāzes maisījumā?";
-        static string a42 = $"";
+        static string a42 = $"Par tvaiku sauc tās vielas, kas var dotajos apstākļos var kondensēties. (no pierakstiem)";
         static string q43 = $"Uzzīmēt kompresora ideālo ciklu, paskaidrot līknes";
-        static string a43 = $"";
+        static string a43 = $"-> Process 1-2. Gāzes saspiešana, kas var norisināties:\n - 1-2{primeChar} - adiabātiski\n - 1-2{doublePrimeChar} - politropiski\n - 1-2{triplePrimeChar} - izotermiski.\n -> Process 2-3. Izobāriska gāzes izplūde.\n -> Process 3-4. Virzuļa virziena maiņa.\n -> Process 4-1. Izobāriska gāzes ieplūde/iesūkšana.\n (97. lpp. + no pierakstiem)";
+        static int z43 = Resource.Mipmap.blank;
         static string q44 = $"Uzzīmēt iekšdedzes motora Otto ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā, paskaidrot līknes";
-        static string a44 = $"";
+        static string a44 = $"-> Process 1-2. Adiabātiska darba vielas saspiešana.\n -> Process 2-3. Izohoriska siltuma pievadīšana sadedzinot degvielu.\n -> Process 3-4. Adiabātiska izplešanās - darba gājiens.\n -> Process 4-1. Izohoriska siltuma aizvadīšana (izpūšot dūmgāzes, ievelkot vēsāku gaisu).\n (99.-101. lpp. + no pierakstiem)";
+        static int z44 = Resource.Mipmap.blank;
         static string q45 = $"Uzzīmēt iekšdedzes motora Dīzeļa ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā, paskaidrot līknes";
-        static string a45 = $"";
+        static string a45 = $"-> Process 1-2. Adiabātiska gaisa saspiešana (ievērojami pieagu temperatūra).\n -> Process 2-3. Izotermiska siltuma pievadīšana (cilindrā iesmidzina degvielu, kura sadeg).\n -> Process 3-4. Gāze izplešas un veic darba gājienu.\n -> Process 4-1. Izohoriska siltuma aizvadīšana (izpūš dūmgāzes, iesūc gaisu).\n (101.-102. lpp. + no pierakstiem)";
+        static int z45 = Resource.Mipmap.blank;
         static string q46 = $"Uzzīmēt gāzes turbīnas ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā un paskaidrot līknes";
-        static string a46 = $"";
+        static string a46 = $"-> Process 1-2. Adiabātiska vielas saspiešana.\n -> Process 2-3. Izobāriska siltuma pievadīšana (vaļējā degkamerā sadeg degviela).\n -> Process 3-4. Adiabātiska izplešanās (dūmgāzes izplūst no degšanas kameras uz turbīnas lāpstiņām).\n -> Process 4-1. Izobāriska siltuma aizvadīšana.\n (105-106. lpp. + no pierakstiem)";
+        static int z46 = Resource.Mipmap.blank;
         static string q47 = $"Uzzīmēt pamatcikla tvaika iekārtas shēmu, nosaukt tās sastāvdaļas";
-        static string a47 = $"";
+        static string a47 = $"B - barošanas sūknis; E - Ekonomaizers; TK - tvaika katls; P - tvaika pārkarsētājs; T - tvaika turbīna; G - elektroģenerators; K - dzesētājs-kondensators.\n (107-109. lpp.)";
+        static int z47 = Resource.Mipmap.blank;
         static string q48 = $"Uzzīmēt tvaika iekārtas pamatciklu T-s koordinātu sistēmā, paskaidrot līknes";
-        static string a48 = $"";
+        static string a48 = $"-> Process 3-4. Kondensāts tiek padots/iesūknēts katlā-ekonomaizerā.\n -> Process 4-5. Tas uzsilst līdz iztvaikošanas temperatūrai.\n -> Process 5-6. Notiek iztvaikošana iztvaicētājā.\n -> Process 6-1. Tvaiks tiek pārkarsēts, tas ir, tiek pacelta tvaika temperatūra.\n -> Process 1-2. Tvaiks nonāk tvaika turbīnā un griež elektroģeneratoru.\n -> Process 2-3. Kondensātorā tvaiks atdod pārpalikušo siltumu un kondensējas. Un tiek novadīts uz kondensāta tvertni.\n (107-109. lpp. + no pierakstiem)";
+        static int z48 = Resource.Mipmap.blank;
         static string q49 = $"Uzzīmēt tvaika iekārtas ciklu ar atkārtotu tvaika pārkarsēšanu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a49 = $"";
+        static int z49 = Resource.Mipmap.blank;
         static string q50 = $"Uzzīmēt saldēšanas iekārtas ideālo ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a50 = $"";
+        static int z50 = Resource.Mipmap.blank;
         static string q51 = $"Uzzīmēt gāzes cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
         static string a51 = $"";
+        static int z51 = Resource.Mipmap.blank;
         static string q52 = $"Uzzīmēt saldēšanas iekārtas gāzes ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a52 = $"";
+        static int z52 = Resource.Mipmap.blank;
         static string q53 = $"Uzzīmēt tvaika cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
         static string a53 = $"";
+        static int z53 = Resource.Mipmap.blank;
         static string q54 = $"Uzzīmēt saldēšanas iekārtas tvaika ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a54 = $"";
+        static int z54 = Resource.Mipmap.blank;
         static string q55 = $"Paskaidrot saldēšanas iekārtas termodinamiskos darbības principus";
         static string a55 = $"";
         static string q56 = $"Uzzīmēt siltumsūkņa shēmu, nosaukt sastāvdaļas";
         static string a56 = $"";
+        static int z56 = Resource.Mipmap.blank;
         static string q57 = $"Paskaidrot siltumsūkņa termodinamiskos darbības principus";
         static string a57 = $"";
         static string q58 = $"Kas ir siltumapmaiņa?";
@@ -176,18 +189,22 @@ namespace learning_siltums_1.HardcodedData
         static string a69 = $"";
         static string q70 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur plāksni pie trešās kārtas robežnosacījumiem";
         static string a70 = $"";
+        static int z70 = Resource.Mipmap.blank;
         static string q71 = $"Kā var aprēķināt siltumpārejas koeficientu daudzslāņu plāksnei?";
         static string a71 = $"";
         static string q72 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur cilindriskas caurules sienu pie trešās kārtas robežnosacījumiem";
         static string a72 = $"";
+        static int z72 = Resource.Mipmap.blank;
         static string q73 = $"Kas ir cauruļvadu siltumizolācijas kritiskais biezums?";
         static string a73 = $"";
         static string q74 = $"Kas ir apribojuma koeficients?";
         static string a74 = $"";
         static string q75 = $"Uzzīmēt temperatūras sadalījuma līkni ķermenī virsmas tuvumā tam dziestot no vienas puses";
         static string a75 = $"";
+        static int z75 = Resource.Mipmap.blank;
         static string q76 = $"Uzzīmēt temperatūras sadalījuma līkni plāksnē tai dziestot no abām pusēm";
         static string a76 = $"";
+        static int z76 = Resource.Mipmap.blank;
         static string q77 = $"Kāda ir līdzības skaitļu būtība?";
         static string a77 = $"";
         static string q78 = $"Kas ir brīvā konvekcija?";
@@ -200,6 +217,7 @@ namespace learning_siltums_1.HardcodedData
         static string a81 = $"";
         static string q82 = $"Uzzīmēt siltumatdeves koeficienta izmaiņas grafiku atkarībā no augstuma brīvai konvekcijai gar vertikālu sienu";
         static string a82 = $"";
+        static int z82 = Resource.Mipmap.blank;
         static string q83 = $"Kas ir kodolveida kondensācija?";
         static string a83 = $"";
         static string q84 = $"Kas ir plēves veida kondensācija?";
@@ -232,6 +250,7 @@ namespace learning_siltums_1.HardcodedData
         static string a97 = $"";
         static string q98 = $"Uzzīmēt skici, kas paskaidro ķermeņu savstarpējo apstarošanos";
         static string a98 = $"";
+        static int z98 = Resource.Mipmap.blank;
 
         public static List<QuestionAndAnswers> GetQnAList()
         {
@@ -279,20 +298,20 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 40, Question = q40, Answer = a40, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 41, Question = q41, Answer = a41, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 42, Question = q42, Answer = a42, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 43, Question = q43, Answer = a43, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 45, Question = q45, Answer = a45, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 46, Question = q46, Answer = a46, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 47, Question = q47, Answer = a47, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 48, Question = q48, Answer = a48, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 49, Question = q49, Answer = a49, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 50, Question = q50, Answer = a50, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 51, Question = q51, Answer = a51, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 52, Question = q52, Answer = a52, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 53, Question = q53, Answer = a53, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 54, Question = q54, Answer = a54, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 43, Question = q43, Answer = a43, AnswerImage = z43, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 44, Question = q44, Answer = a44, AnswerImage = z43, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 45, Question = q45, Answer = a45, AnswerImage = z45, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 46, Question = q46, Answer = a46, AnswerImage = z46, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 47, Question = q47, Answer = a47, AnswerImage = z47, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 48, Question = q48, Answer = a48, AnswerImage = z48, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 49, Question = q49, Answer = a49, AnswerImage = z49, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 50, Question = q50, Answer = a50, AnswerImage = z50, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 51, Question = q51, Answer = a51, AnswerImage = z51, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 52, Question = q52, Answer = a52, AnswerImage = z52, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 53, Question = q53, Answer = a53, AnswerImage = z53, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 54, Question = q54, Answer = a54, AnswerImage = z54, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 55, Question = q55, Answer = a55, AnswerImage = zBlank, Points = 2 },
-                new QuestionAndAnswers(){ QuestionId = 56, Question = q56, Answer = a56, AnswerImage = zBlank, Points = 2 },
+                new QuestionAndAnswers(){ QuestionId = 56, Question = q56, Answer = a56, AnswerImage = z56, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 57, Question = q57, Answer = a57, AnswerImage = zBlank, Points = 2 },
                 new QuestionAndAnswers(){ QuestionId = 58, Question = q58, Answer = a58, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 59, Question = q59, Answer = a59, AnswerImage = zBlank, Points = 1 },
@@ -306,19 +325,19 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 67, Question = q67, Answer = a67, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 68, Question = q68, Answer = a68, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 69, Question = q69, Answer = a69, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 70, Question = q70, Answer = a70, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 70, Question = q70, Answer = a70, AnswerImage = z70, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 71, Question = q71, Answer = a71, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 72, Question = q72, Answer = a72, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 72, Question = q72, Answer = a72, AnswerImage = z72, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 73, Question = q73, Answer = a73, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 74, Question = q74, Answer = a74, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 75, Question = q75, Answer = a75, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 76, Question = q76, Answer = a76, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 75, Question = q75, Answer = a75, AnswerImage = z75, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 76, Question = q76, Answer = a76, AnswerImage = z76, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 77, Question = q77, Answer = a77, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 78, Question = q78, Answer = a78, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 79, Question = q79, Answer = a79, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 80, Question = q80, Answer = a80, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 81, Question = q81, Answer = a81, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 82, Question = q82, Answer = a82, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 82, Question = q82, Answer = a82, AnswerImage = z82, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 83, Question = q83, Answer = a83, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 84, Question = q84, Answer = a84, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 85, Question = q85, Answer = a85, AnswerImage = zBlank, Points = 1 },
@@ -334,7 +353,7 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 95, Question = q95, Answer = a95, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 96, Question = q96, Answer = a96, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 97, Question = q97, Answer = a97, AnswerImage = zBlank, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 98, Question = q98, Answer = a98, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 98, Question = q98, Answer = a98, AnswerImage = z98, Points = 1 },
             };
 
             return res;
