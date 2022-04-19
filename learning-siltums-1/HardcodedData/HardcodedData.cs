@@ -14,9 +14,11 @@ namespace learning_siltums_1.HardcodedData
         static string capitalPhiChar = $"\u03A6"; // ņūtona vienādojumam
         static string smallAlphaChar = $"\u03B1"; // siltumatdeves koeficients
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
+        static string smallInfinity = $"\u221E"; // bezgalība
         static string smallLambda = $"\u03BB"; // siltumvadītspējas koeficients
         static string smallMuChar = $"\u00b5"; // micro
         static string smallNu_specificVolumeChar = $"\U0001D6CE";
+        static string smallOmegaChar = $"\u03C9";
         static string smallPhiChar = $"\u03C6"; // relatīvais gaisa mitrums
         static string smallPsiChar = $"\u03C8"; // ārējās iztvaikošanas siltums
         static string smallRhoChar = $"\u03C1"; // iekšējās iztvaikošanas siltums
@@ -125,7 +127,7 @@ namespace learning_siltums_1.HardcodedData
         static string a42 = $"Par tvaiku sauc tās vielas, kas var dotajos apstākļos var kondensēties. (no pierakstiem)";
         static string q43 = $"Uzzīmēt kompresora ideālo ciklu, paskaidrot līknes";
         static string a43 = $"-> Process 1-2. Gāzes saspiešana, kas var norisināties:\n - 1-2{primeChar} - adiabātiski\n - 1-2{doublePrimeChar} - politropiski\n - 1-2{triplePrimeChar} - izotermiski.\n -> Process 2-3. Izobāriska gāzes izplūde.\n -> Process 3-4. Virzuļa virziena maiņa.\n -> Process 4-1. Izobāriska gāzes ieplūde/iesūkšana.\n (97. lpp. + no pierakstiem)";
-        static int z43 = Resource.Mipmap.blank;
+        static int z43 = Resource.Mipmap.kompresora_cikls;
         static string q44 = $"Uzzīmēt iekšdedzes motora Otto ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā, paskaidrot līknes";
         static string a44 = $"-> Process 1-2. Adiabātiska darba vielas saspiešana.\n -> Process 2-3. Izohoriska siltuma pievadīšana sadedzinot degvielu.\n -> Process 3-4. Adiabātiska izplešanās - darba gājiens.\n -> Process 4-1. Izohoriska siltuma aizvadīšana (izpūšot dūmgāzes, ievelkot vēsāku gaisu).\n (99.-101. lpp. + no pierakstiem)";
         static int z44 = Resource.Mipmap.blank;
@@ -201,7 +203,7 @@ namespace learning_siltums_1.HardcodedData
         static string q73 = $"Kas ir cauruļvadu siltumizolācijas kritiskais biezums?";
         static string a73 = $"";
         static string q74 = $"Kas ir apribojuma koeficients?";
-        static string a74 = $"";
+        static string a74 = $"Izsaka sildvirsmas ribotās puses pilnā laukuma attiecību pret sienas gludās puses laukumu.\n m=S{subscript2}/S{subscript1}.\n (160. lpp.)";
         static string q75 = $"Uzzīmēt temperatūras sadalījuma līkni ķermenī virsmas tuvumā tam dziestot no vienas puses";
         static string a75 = $"";
         static int z75 = Resource.Mipmap.blank;
@@ -209,11 +211,11 @@ namespace learning_siltums_1.HardcodedData
         static string a76 = $"";
         static int z76 = Resource.Mipmap.blank;
         static string q77 = $"Kāda ir līdzības skaitļu būtība?";
-        static string a77 = $"";
+        static string a77 = $"Tie piešķir konkrētu viennozīmīgumu.\n Divi procesi ir līdzīgi, ja: 1) tie ir kvalitatīvi vienādi; 2) atbilstoši lielumi ir saistīti ar vienādiem līdzības skaitļiem.\n (no pierakstiem)";
         static string q78 = $"Kas ir brīvā konvekcija?";
-        static string a78 = $"";
+        static string a78 = $"Brīvā konvekcija rodas atsevišķu daļiņu nevienmērīgas sasilšanas dēļ. Daļiņas, kas atrodas tuvāk karstajai sienai, sasilts, to blīvums samazinās un tās ceļas uz augšu.\n (177. lpp.)";
         static string q79 = $"Kas ir piespiedu konvekcija?";
-        static string a79 = $"";
+        static string a79 = $"Piespiedu konvekcijā šķidrums vai gāze pārvietojas spiedumu starpības dēļ. Spiedienu starpību var izraisīt vējš, šķidruma līmeņu starpība, ventilatori, sūkņi.\n (177. lpp.)";
         static string q80 = $"Izskaidrot, kā notiek siltumpārnese laminārā plūsmā";
         static string a80 = $"";
         static string q81 = $"Izskaidrot, kā notiek siltumpārnese turbulentā plūsmā";
@@ -222,35 +224,35 @@ namespace learning_siltums_1.HardcodedData
         static string a82 = $"";
         static int z82 = Resource.Mipmap.blank;
         static string q83 = $"Kas ir kodolveida kondensācija?";
-        static string a83 = $"";
+        static string a83 = $"Ja šķidrums neslapina virsmu vai slapina to tikai daļēji, tad ir pilienu kondensācija (sauc arī par kondensāciju rasas veidā), kad kondensāts rodas atsevišķu pilienu veidā. \n (189. lpp.)";
         static string q84 = $"Kas ir plēves veida kondensācija?";
-        static string a84 = $"";
+        static string a84 = $"Ja šķidrums slapina sienas virsmu, tad tā ir plēves veida kondensācija.\n (189. lpp.)";
         static string q85 = $"Kas ir kodolveida iztvaikošana?";
-        static string a85 = $"";
+        static string a85 = $"Maksimālā šķidruma temperatūra būs pie trauka, resp., sildvirsmas karstajām sienām. Uz šīs virsmas ir atsevišķi sienas negludumi, bedrītes, pielipuši gaisa pūslīši, katlakmens un putekļi, kas veido iztvaikošanas centrus. Šeit rodas atsevišķie tvaika burbulīši - pūslīši, kuri atraujas no sienas un ceļas uz augšu, izraisot šķidrumā intensīvu konvekciju. Tā ir pūslīšu jeb kodolveida iztvaikošana. \n (188. lpp.)";
         static string q86 = $"Kas ir plēves veida iztvaikošana?";
-        static string a86 = $"";
+        static string a86 = $"Siltumatdeve un līdz ar to arī iztvaikošanas intensitāte palielinās līdz ar sildvirsmas temperatūras paaugstināšanos. Arvien varāk tvaika pūslīšu veidojas uz sienas virsmas, kamēr pūslīši saplūst un sāk veidot tvaika plēvi. Pūslīšu jeb kodolveida iztvaikošana pāriet plēves veida iztvaikošanā.\n (188. lpp.)";
         static string q87 = $"Cik ir A, R, D absolūti melnam ķermenim?";
-        static string a87 = $"";
+        static string a87 = $"A=1, R=0, D=0.\n (199. lpp.)";
         static string q88 = $"Cik ir A, R, D absolūti caurspīdīgam ķermenim?";
-        static string a88 = $"";
+        static string a88 = $"A=0, R=0, D=1.\n (199. lpp.)";
         static string q89 = $"Cik ir A, R, D absolūti baltam ķermenim?";
-        static string a89 = $"";
+        static string a89 = $"A=0, R=1, D=0.\n (199. lpp.)";
         static string q90 = $"Kas ir integrālais starojums?";
-        static string a90 = $"";
+        static string a90 = $"Par integrālo sauc summāro starojumu visos viļņu garumos - no {smallLambda}=0 līdz {smallLambda}={smallInfinity}.\n (199. lpp.)";
         static string q91 = $"Kas ir monohromatiskais starojums?";
-        static string a91 = $"";
+        static string a91 = $"Par monohromatisko sauc starojumu šaurā viļņu intervālā: no {smallLambda} līdz {smallLambda}+d{smallLambda}.\n (199. lpp.)";
         static string q92 = $"Kas ir starojuma plūsmas blīvums (intensitāte)?";
-        static string a92 = $"";
+        static string a92 = $"Starojuma plūsmu, kas iet caur (vai krīt uz) virsmas 1m{supscript2}, sauc par starojuma plūsmas blībumu jeb intensitāti E(W/m{supscript2}).\n (199. lpp.)";
         static string q93 = $"Paskaidrot Planka likuma būtību siltumstarošanā";
-        static string a93 = $"";
-        static string q94 = $"Paskaidrot Vjēna likuma būtību siltumstarošanā";
-        static string a94 = $"";
+        static string a93 = $"Šis likums izsaka absolūti melna ķermeņa siltuma starojuma sadalījumu pie dažādiem viļņu garumiem atkarībā no temperatūras.\n (200. lpp. + no pierakstiem)";
+        static string q94 = $"Paskaidrot Vjēna (Vīna) likuma būtību siltumstarošanā";
+        static string a94 = $"Paaugstinot temperatūru viļņu garums pie kura ir maksimālais starojums samazinās.\n (200. lpp. + no pierakstiem)";
         static string q95 = $"Paskaidrot Stefana-Bolcmaņa likuma būtību siltumstarošanā";
-        static string a95 = $"";
+        static string a95 = $"Izsaka absolūti melna ķermeņa intensitāti atkarībā no temperatūras. (200.-201. lpp. + no pierakstiem)";
         static string q96 = $"Paskaidrot otrā Kirhofa likuma būtību siltumstarošanā";
-        static string a96 = $"";
+        static string a96 = $"Izstarotās enerģijas attiecība pret absorbcijas koeficientu vienā un tajā pašā temperatūrā visiem ķermeņiem ir vienāda.\n (201.-202.lpp. + no pierakstiem)";
         static string q97 = $"Paskaidrot Lamberta likuma būtību siltumstarošanā";
-        static string a97 = $"";
+        static string a97 = $"Pieaugot leņķim {smallOmegaChar}, starojuma intensitāte samazinās.\n (202.-203. lpp. + no pierakstiem)";
         static string q98 = $"Uzzīmēt skici, kas paskaidro ķermeņu savstarpējo apstarošanos";
         static string a98 = $"";
         static int z98 = Resource.Mipmap.blank;

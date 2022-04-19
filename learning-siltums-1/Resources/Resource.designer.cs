@@ -4459,6 +4459,9 @@ namespace learning_siltums_1
 			// aapt resource value: 0x7F0D0004
 			public const int Karno_cikls = 2131558404;
 			
+			// aapt resource value: 0x7F0D0005
+			public const int kompresora_cikls = 2131558405;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
