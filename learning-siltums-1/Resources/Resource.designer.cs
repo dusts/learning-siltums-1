@@ -4463,13 +4463,28 @@ namespace learning_siltums_1
 			public const int ic_launcher_round = 2131558405;
 			
 			// aapt resource value: 0x7F0D0006
-			public const int Karno_cikls = 2131558406;
+			public const int Idealais_saldesanas_iekartas_cikls = 2131558406;
 			
 			// aapt resource value: 0x7F0D0007
-			public const int kompresora_cikls = 2131558407;
+			public const int Karno_cikls = 2131558407;
 			
 			// aapt resource value: 0x7F0D0008
-			public const int Oto_cikls = 2131558408;
+			public const int kompresora_cikls = 2131558408;
+			
+			// aapt resource value: 0x7F0D0009
+			public const int Oto_cikls = 2131558409;
+			
+			// aapt resource value: 0x7F0D000A
+			public const int Saldesanas_iekartas_gazes_cikls = 2131558410;
+			
+			// aapt resource value: 0x7F0D000B
+			public const int Saldesanas_iekartas_tvaika_cikls = 2131558411;
+			
+			// aapt resource value: 0x7F0D000C
+			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558412;
+			
+			// aapt resource value: 0x7F0D000D
+			public const int Tvaiku_iekartas_pamatcikls = 2131558413;
 			
 			static Mipmap()
 			{
