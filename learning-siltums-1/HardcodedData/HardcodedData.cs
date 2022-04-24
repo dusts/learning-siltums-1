@@ -130,13 +130,13 @@ namespace learning_siltums_1.HardcodedData
         static int z43 = Resource.Mipmap.kompresora_cikls;
         static string q44 = $"Uzzīmēt iekšdedzes motora Otto ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā, paskaidrot līknes";
         static string a44 = $"-> Process 1-2. Adiabātiska darba vielas saspiešana.\n -> Process 2-3. Izohoriska siltuma pievadīšana sadedzinot degvielu.\n -> Process 3-4. Adiabātiska izplešanās - darba gājiens.\n -> Process 4-1. Izohoriska siltuma aizvadīšana (izpūšot dūmgāzes, ievelkot vēsāku gaisu).\n (99.-101. lpp. + no pierakstiem)";
-        static int z44 = Resource.Mipmap.blank;
+        static int z44 = Resource.Mipmap.Oto_cikls;
         static string q45 = $"Uzzīmēt iekšdedzes motora Dīzeļa ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā, paskaidrot līknes";
         static string a45 = $"-> Process 1-2. Adiabātiska gaisa saspiešana (ievērojami pieagu temperatūra).\n -> Process 2-3. Izotermiska siltuma pievadīšana (cilindrā iesmidzina degvielu, kura sadeg).\n -> Process 3-4. Gāze izplešas un veic darba gājienu.\n -> Process 4-1. Izohoriska siltuma aizvadīšana (izpūš dūmgāzes, iesūc gaisu).\n (101.-102. lpp. + no pierakstiem)";
-        static int z45 = Resource.Mipmap.blank;
+        static int z45 = Resource.Mipmap.Dizela_cikls;
         static string q46 = $"Uzzīmēt gāzes turbīnas ciklu p-{smallNu_specificVolumeChar} koordinātu sistēmā un paskaidrot līknes";
         static string a46 = $"-> Process 1-2. Adiabātiska vielas saspiešana.\n -> Process 2-3. Izobāriska siltuma pievadīšana (vaļējā degkamerā sadeg degviela).\n -> Process 3-4. Adiabātiska izplešanās (dūmgāzes izplūst no degšanas kameras uz turbīnas lāpstiņām).\n -> Process 4-1. Izobāriska siltuma aizvadīšana.\n (105-106. lpp. + no pierakstiem)";
-        static int z46 = Resource.Mipmap.blank;
+        static int z46 = Resource.Mipmap.Gazu_turbinu_cikls;
         static string q47 = $"Uzzīmēt pamatcikla tvaika iekārtas shēmu, nosaukt tās sastāvdaļas";
         static string a47 = $"B - barošanas sūknis; E - Ekonomaizers; TK - tvaika katls; P - tvaika pārkarsētājs; T - tvaika turbīna; G - elektroģenerators; K - dzesētājs-kondensators.\n (107-109. lpp.)";
         static int z47 = Resource.Mipmap.blank;
