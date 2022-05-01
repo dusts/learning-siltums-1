@@ -160,7 +160,7 @@ namespace learning_siltums_1.HardcodedData
         static int z53 = Resource.Mipmap.blank;
         static string q54 = $"Uzzīmēt saldēšanas iekārtas tvaika ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a54 = $"-> Process 4-1. Aukstuma aģents šķidrā veidā ieplūst saldēšanas kamerā, uzņem siltumu no dzesējamā materiāla un iztvaiko.\n -> Process 1-2. Aukstuma aģenta tvaiki tiek saspiesti, pieaug spiediens un temperatūra.\n -> Process 2-2{primeChar}. Aukstuma aģents atdod siltumu kondensatorā, atdziest un kondensējas.\n -> Process 2{doublePrimeChar}-3. Aukstuma aģents atdod siltumu dzesētājā, samazinās temperatūra.\n -> Process 3-4. Droselē aukstuma aģentam ievērojami samazinās spiediens un temperatūra.\n (123.-123. lpp. + no pierakstiem)";
-        static int z54 = Resource.Mipmap.blank;
+        static int z54 = Resource.Mipmap.Saldesanas_iekartas_tvaika_cikls;
         static string q55 = $"Paskaidrot saldēšanas iekārtas termodinamiskos darbības principus";
         static string a55 = $"Gāze ar kompresora palīdzību tiek saspiesta, tā palielinot spiedienu un samazinot temperatūru. Tad tiek aizvadīta uz dzesēšanas kameru, kur tiek uzņemts siltums, ko pēc tam izvada ārā.\n (no pierakstiem)";
         static string q56 = $"Uzzīmēt siltumsūkņa shēmu, nosaukt sastāvdaļas";
