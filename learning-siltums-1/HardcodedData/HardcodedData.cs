@@ -138,8 +138,8 @@ namespace learning_siltums_1.HardcodedData
         static string a46 = $"-> Process 1-2. Adiabātiska vielas saspiešana.\n -> Process 2-3. Izobāriska siltuma pievadīšana (vaļējā degkamerā sadeg degviela).\n -> Process 3-4. Adiabātiska izplešanās (dūmgāzes izplūst no degšanas kameras uz turbīnas lāpstiņām).\n -> Process 4-1. Izobāriska siltuma aizvadīšana.\n (105-106. lpp. + no pierakstiem)";
         static int z46 = Resource.Mipmap.Gazu_turbinu_cikls;
         static string q47 = $"Uzzīmēt pamatcikla tvaika iekārtas shēmu, nosaukt tās sastāvdaļas";
-        static string a47 = $"B - barošanas sūknis; E - Ekonomaizers; TK - tvaika katls; P - tvaika pārkarsētājs; T - tvaika turbīna; G - elektroģenerators; K - dzesētājs-kondensators.\n (107-109. lpp.)";
-        static int z47 = Resource.Mipmap.blank;
+        static string a47 = $"BS - barošanas sūknis; E - Ekonomaizers; EĢ - elektroģenerators; Iztv - iztvaicētājs; K - dzesētājs-kondensators; KS - kondensāta sūknis; KT - kondensāta tvertne; P - pārkarsētājs; TT - tvaika turbīna.\n (107-109. lpp. + no pierakstiem)";
+        static int z47 = Resource.Mipmap.Tvaiku_iekartas_pamatcikla_shema;
         static string q48 = $"Uzzīmēt tvaika iekārtas pamatciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a48 = $"-> Process 3-4. Kondensāts tiek padots/iesūknēts katlā-ekonomaizerā.\n -> Process 4-5. Tas uzsilst līdz iztvaikošanas temperatūrai.\n -> Process 5-6. Notiek iztvaikošana iztvaicētājā.\n -> Process 6-1. Tvaiks tiek pārkarsēts, tas ir, tiek pacelta tvaika temperatūra.\n -> Process 1-2. Tvaiks nonāk tvaika turbīnā un griež elektroģeneratoru.\n -> Process 2-3. Kondensātorā tvaiks atdod pārpalikušo siltumu un kondensējas. Un tiek novadīts uz kondensāta tvertni.\n (107-109. lpp. + no pierakstiem)";
         static int z48 = Resource.Mipmap.Tvaiku_iekartas_pamatcikls;
@@ -151,13 +151,13 @@ namespace learning_siltums_1.HardcodedData
         static int z50 = Resource.Mipmap.Idealais_saldesanas_iekartas_cikls;
         static string q51 = $"Uzzīmēt gāzes cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
         static string a51 = $"SK - saldēšanas kamera; K - kompresors; Dz - dzesētājs; Dt - detanders (izplešanās trauks). (121.-123. lpp. + no pierakstiem)";
-        static int z51 = Resource.Mipmap.blank;
+        static int z51 = Resource.Mipmap.Saldesanas_iekartas_gazes_cikla_shema;
         static string q52 = $"Uzzīmēt saldēšanas iekārtas gāzes ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a52 = $"-> Process 1-2. Notiek gāzes adiabāta saspiešana kompresorā.\n -> Process 2-3. Izobārā procesā dzesētājā novada siltumu q{subscript1}. Siltuma novadīšanu gāzei nevar veikt izotermi, kā tas ir Karno ciklā, bet process noris izobāri, pazeminoties gāzes temperatūrai.\n -> Process 3-4. Gāzes detanderā adiabāti izplešas, tā rezultātā pazeminās gāzes spiediens un temperatūra.\n -> Process 4-1. Atdzisusī gāze siltumapaiņas aparātā - saldēšanas kamerā - uzņem siltumu no dzesējamās vides (izobāra), un tās temperatūra paaugstinās.\n (122. lpp.)";
         static int z52 = Resource.Mipmap.Saldesanas_iekartas_gazes_cikls;
         static string q53 = $"Uzzīmēt tvaika cikla saldēšanas iekārtas shēmu, nosaukt sastāvdaļas";
         static string a53 = $"K - kompresors; Kd - kondensators; Dz - dzesētājs; Dr - droselēšanas ventilis (drosele); Sk - saldēšanas kamera.\n (123. lpp.)";
-        static int z53 = Resource.Mipmap.blank;
+        static int z53 = Resource.Mipmap.Saldesanas_iekartas_tvaika_cikla_shema;
         static string q54 = $"Uzzīmēt saldēšanas iekārtas tvaika ciklu T-s koordinātu sistēmā, paskaidrot līknes";
         static string a54 = $"-> Process 4-1. Aukstuma aģents šķidrā veidā ieplūst saldēšanas kamerā, uzņem siltumu no dzesējamā materiāla un iztvaiko.\n -> Process 1-2. Aukstuma aģenta tvaiki tiek saspiesti, pieaug spiediens un temperatūra.\n -> Process 2-2{primeChar}. Aukstuma aģents atdod siltumu kondensatorā, atdziest un kondensējas.\n -> Process 2{doublePrimeChar}-3. Aukstuma aģents atdod siltumu dzesētājā, samazinās temperatūra.\n -> Process 3-4. Droselē aukstuma aģentam ievērojami samazinās spiediens un temperatūra.\n (123.-123. lpp. + no pierakstiem)";
         static int z54 = Resource.Mipmap.Saldesanas_iekartas_tvaika_cikls;
