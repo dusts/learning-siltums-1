@@ -165,7 +165,7 @@ namespace learning_siltums_1.HardcodedData
         static string a55 = $"Gāze ar kompresora palīdzību tiek saspiesta, tā palielinot spiedienu un samazinot temperatūru. Tad tiek aizvadīta uz dzesēšanas kameru, kur tiek uzņemts siltums, ko pēc tam izvada ārā.\n (no pierakstiem)";
         static string q56 = $"Uzzīmēt siltumsūkņa shēmu, nosaukt sastāvdaļas";
         static string a56 = $"1 - kompresors; 2 - kondensators; 3 - droselēšanas ventīlis (drosele); 4 - iztvaikotājs; 5 - dabas siltuma avots; 6 - siltumnesēja cirkulācijas sūknis; 7 - siltumtīkls; 8 - cirkulācijas sūknis; 9 - patērētāji.\n (no pierakstiem)";
-        static int z56 = Resource.Mipmap.blank;
+        static int z56 = Resource.Mipmap.Siltuma_sukna_shema;
         static string q57 = $"Paskaidrot siltumsūkņa termodinamiskos darbības principus";
         static string a57 = $"Siltumsūknis darbojas pēc apgrieztā termodinamiskā cikla (apgrieztā Karno cikla), tas saņem siltumu no apkārtējās vides, ciklā patērē darbu un nodod tālāk siltumu.\n (šis liekas tāds, nepilnīgs...ņemts no pierakstiem)";
         static string q58 = $"Kas ir siltumapmaiņa?";
