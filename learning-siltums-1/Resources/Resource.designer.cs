@@ -4490,13 +4490,16 @@ namespace learning_siltums_1
 			public const int Siltuma_sukna_shema = 2131558414;
 			
 			// aapt resource value: 0x7F0D000F
-			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558415;
+			public const int Temperaturas_sadalijums_caur_vienu_plaksni = 2131558415;
 			
 			// aapt resource value: 0x7F0D0010
-			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558416;
+			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558416;
 			
 			// aapt resource value: 0x7F0D0011
-			public const int Tvaiku_iekartas_pamatcikls = 2131558417;
+			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558417;
+			
+			// aapt resource value: 0x7F0D0012
+			public const int Tvaiku_iekartas_pamatcikls = 2131558418;
 			
 			static Mipmap()
 			{

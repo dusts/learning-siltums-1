@@ -344,6 +344,21 @@
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Siltuma_sukna_shema.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\Temperaturas_sadalijums_caur_vienu_plaksni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\Temperaturas_sadalijums_caur_vienu_plaksni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\Temperaturas_sadalijums_caur_vienu_plaksni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Temperaturas_sadalijums_caur_vienu_plaksni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Temperaturas_sadalijums_caur_vienu_plaksni.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.

@@ -194,7 +194,7 @@ namespace learning_siltums_1.HardcodedData
         static string a69 = $"{smallAlphaChar} - siltumatdeves koeficients (W/(m{supscript2}K)), kas rāda, kāds ir siltuma daudzums laika vienībā no sienas virsmas 1m{supscript2} tiek atdots šķidrumam (vai otrādi - no šķidruma sienai), ja temperatūru starpība starp šķidrumu un sienas virsmu ir 1K.\n (142. lpp.)";
         static string q70 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur plāksni pie trešās kārtas robežnosacījumiem";
         static string a70 = $"";
-        static int z70 = Resource.Mipmap.blank;
+        static int z70 = Resource.Mipmap.Temperaturas_sadalijums_caur_vienu_plaksni;
         static string q71 = $"Kā var aprēķināt siltumpārejas koeficientu daudzslāņu plāksnei?";
         static string a71 = $"";
         static string q72 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur cilindriskas caurules sienu pie trešās kārtas robežnosacījumiem";
