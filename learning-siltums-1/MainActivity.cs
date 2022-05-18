@@ -17,6 +17,8 @@ namespace learning_siltums_1
         RecyclerView.LayoutManager mLayoutManager;
         QuestionsAndAnswersAdapter mAdapter;
         Siltums1QnAData mData;
+        QuestionsAndAnswersQuizAdapter mQuizAdapter;
+        Siltums1QnADataQuiz mQuizData;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,6 +32,7 @@ namespace learning_siltums_1
 
             // Prepare the data source:
             mData = new Siltums1QnAData();
+            //mQuizData = new Siltums1QnADataQuiz();
 
             // Set our view from the "main" layout resource:
             SetContentView(Resource.Layout.activity_main);
@@ -42,9 +45,11 @@ namespace learning_siltums_1
 
             // Instantiate the adapter and pass in its data source:
             mAdapter = new QuestionsAndAnswersAdapter(mData);
+            //mQuizAdapter = new QuestionsAndAnswersQuizAdapter(mQuizData);
 
             // Plug the adapter into the RecyclerView:
             mRecyclerView.SetAdapter(mAdapter);
+            //mRecyclerView.SetAdapter(mQuizAdapter);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

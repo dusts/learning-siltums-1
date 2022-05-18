@@ -64,7 +64,9 @@
     <Compile Include="HardcodedData\HardcodedData.cs" />
     <Compile Include="HardcodedData\QnAViewHolder.cs" />
     <Compile Include="HardcodedData\QuestionAndAnswers.cs" />
+    <Compile Include="HardcodedData\QuestionsAndAnswersQuizAdapter.cs" />
     <Compile Include="HardcodedData\QuestionsAndAnswersAdapter.cs" />
+    <Compile Include="HardcodedData\Siltums1QnADataQuiz.cs" />
     <Compile Include="HardcodedData\Siltums1QnAData.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
