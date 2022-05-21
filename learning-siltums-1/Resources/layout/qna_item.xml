@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/qna_item_answer"/>
+                android:id="@+id/qna_item_answer" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -38,6 +38,11 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/image_empty"
                 android:id="@+id/qna_item_image"/>
+            <Button
+                android:id="@+id/qna_item_show_button"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/button_show_answer"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>

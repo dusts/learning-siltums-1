@@ -7,5 +7,6 @@
         public string Answer { get; set; }
         public int AnswerImage { get; set; }
         public int Points { get; set; }
+        public bool ShowHide { get; set; }
     }
 }

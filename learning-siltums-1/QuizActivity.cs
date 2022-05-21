@@ -29,7 +29,7 @@ namespace learning_siltums_1
 
             mLayoutManager = new LinearLayoutManager(this);
             mQuizRecyclerView.SetLayoutManager(mLayoutManager);
-
+            
             // Instantiate the adapter and pass in its data source:
             mQuizAdapter = new QuestionsAndAnswersQuizAdapter(mQuizData);
 

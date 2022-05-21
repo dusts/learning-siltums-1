@@ -28,6 +28,7 @@ namespace learning_siltums_1.HardcodedData
             vh.Answer.TextFormatted = GetFormatedText(mData.questionAndAnswersList[position].Answer);
             vh.Points.Text = mData.questionAndAnswersList[position].Points.ToString();
             vh.Image.SetImageResource(mData.questionAndAnswersList[position].AnswerImage);
+            vh.ShowHide.Visibility = ViewStates.Gone;
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

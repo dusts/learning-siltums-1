@@ -1,4 +1,5 @@
-﻿using Android.Text;
+﻿using Android.App;
+using Android.Text;
 using Android.Text.Style;
 using Android.Views;
 using AndroidX.RecyclerView.Widget;
@@ -28,6 +29,24 @@ namespace learning_siltums_1.HardcodedData
             vh.Answer.TextFormatted = GetFormatedText(mData.questionAndAnswersQuizList[position].Answer);
             vh.Points.Text = mData.questionAndAnswersQuizList[position].Points.ToString();
             vh.Image.SetImageResource(mData.questionAndAnswersQuizList[position].AnswerImage);
+            vh.ShowHide.Click += (sender, e) =>
+            {
+                if (vh.Answer.Visibility == ViewStates.Gone)
+                {
+                    vh.Answer.Visibility = ViewStates.Visible;
+                    vh.Image.Visibility = ViewStates.Visible;
+                    vh.ShowHide.Text = "Slēpt atbildi";
+                }
+                else
+                {
+                    vh.Answer.Visibility = ViewStates.Gone;
+                    vh.Image.Visibility = ViewStates.Gone;
+                    vh.ShowHide.Text = "Rādīt atbildi";
+                }
+            };
+
+            vh.Answer.Visibility = ViewStates.Gone;
+            vh.Image.Visibility = ViewStates.Gone;
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

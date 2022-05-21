@@ -13,6 +13,7 @@ namespace learning_siltums_1.HardcodedData
         public TextView Answer { get; private set; }
         public TextView Points { get; private set; }
         public ImageView Image { get; private set; }
+        public Button ShowHide { get; private set; }
 
         public QnAViewHolder(View itemView) : base(itemView)
         {
@@ -22,6 +23,7 @@ namespace learning_siltums_1.HardcodedData
             Answer = itemView.FindViewById<TextView>(Resource.Id.qna_item_answer);
             Points = itemView.FindViewById<TextView>(Resource.Id.qna_item_points);
             QuestionId = itemView.FindViewById<TextView>(Resource.Id.qna_item_id);
+            ShowHide = itemView.FindViewById<Button>(Resource.Id.qna_item_show_button);
         }
     }
 }
