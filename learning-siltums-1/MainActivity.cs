@@ -1,24 +1,21 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using AndroidX.AppCompat.Widget;
-using AndroidX.AppCompat.App;
 using AndroidX.RecyclerView.Widget;
 using learning_siltums_1.HardcodedData;
+using Google.Android.Material.FloatingActionButton;
+using Android.Content;
 
 namespace learning_siltums_1
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : Activity
     {
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager mLayoutManager;
         QuestionsAndAnswersAdapter mAdapter;
         Siltums1QnAData mData;
-        QuestionsAndAnswersQuizAdapter mQuizAdapter;
-        Siltums1QnADataQuiz mQuizData;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,13 +23,8 @@ namespace learning_siltums_1
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-
             // Prepare the data source:
             mData = new Siltums1QnAData();
-            //mQuizData = new Siltums1QnADataQuiz();
 
             // Set our view from the "main" layout resource:
             SetContentView(Resource.Layout.activity_main);
@@ -45,11 +37,15 @@ namespace learning_siltums_1
 
             // Instantiate the adapter and pass in its data source:
             mAdapter = new QuestionsAndAnswersAdapter(mData);
-            //mQuizAdapter = new QuestionsAndAnswersQuizAdapter(mQuizData);
 
             // Plug the adapter into the RecyclerView:
             mRecyclerView.SetAdapter(mAdapter);
-            //mRecyclerView.SetAdapter(mQuizAdapter);
+
+            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            fab.Click += (sender, e) =>
+            {
+                StartActivity(new Intent(this, typeof(QuizActivity)));
+            };
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

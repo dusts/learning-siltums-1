@@ -2,4 +2,6 @@
 	<string name="app_name">learning_siltums_1</string>
     <string name="action_settings">Settings</string>
 	<string name="image_empty">No image</string>
+	<string name="title_home">Home</string>
+	<string name="title_dashboard">Dashboard</string>
 </resources>
