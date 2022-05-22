@@ -4466,61 +4466,82 @@ namespace learning_siltums_1
 		{
 			
 			// aapt resource value: 0x7F0D0000
-			public const int blank = 2131558400;
+			public const int a71 = 2131558400;
 			
 			// aapt resource value: 0x7F0D0001
-			public const int Dizela_cikls = 2131558401;
+			public const int a72 = 2131558401;
 			
 			// aapt resource value: 0x7F0D0002
-			public const int Gazu_turbinu_cikls = 2131558402;
+			public const int a73 = 2131558402;
 			
 			// aapt resource value: 0x7F0D0003
-			public const int ic_launcher = 2131558403;
+			public const int a75 = 2131558403;
 			
 			// aapt resource value: 0x7F0D0004
-			public const int ic_launcher_foreground = 2131558404;
+			public const int a76 = 2131558404;
 			
 			// aapt resource value: 0x7F0D0005
-			public const int ic_launcher_round = 2131558405;
+			public const int a82 = 2131558405;
 			
 			// aapt resource value: 0x7F0D0006
-			public const int Idealais_saldesanas_iekartas_cikls = 2131558406;
+			public const int a98 = 2131558406;
 			
 			// aapt resource value: 0x7F0D0007
-			public const int Karno_cikls = 2131558407;
+			public const int blank = 2131558407;
 			
 			// aapt resource value: 0x7F0D0008
-			public const int kompresora_cikls = 2131558408;
+			public const int Dizela_cikls = 2131558408;
 			
 			// aapt resource value: 0x7F0D0009
-			public const int Oto_cikls = 2131558409;
+			public const int Gazu_turbinu_cikls = 2131558409;
 			
 			// aapt resource value: 0x7F0D000A
-			public const int Saldesanas_iekartas_gazes_cikla_shema = 2131558410;
+			public const int ic_launcher = 2131558410;
 			
 			// aapt resource value: 0x7F0D000B
-			public const int Saldesanas_iekartas_gazes_cikls = 2131558411;
+			public const int ic_launcher_foreground = 2131558411;
 			
 			// aapt resource value: 0x7F0D000C
-			public const int Saldesanas_iekartas_tvaika_cikla_shema = 2131558412;
+			public const int ic_launcher_round = 2131558412;
 			
 			// aapt resource value: 0x7F0D000D
-			public const int Saldesanas_iekartas_tvaika_cikls = 2131558413;
+			public const int Idealais_saldesanas_iekartas_cikls = 2131558413;
 			
 			// aapt resource value: 0x7F0D000E
-			public const int Siltuma_sukna_shema = 2131558414;
+			public const int Karno_cikls = 2131558414;
 			
 			// aapt resource value: 0x7F0D000F
-			public const int Temperaturas_sadalijums_caur_vienu_plaksni = 2131558415;
+			public const int kompresora_cikls = 2131558415;
 			
 			// aapt resource value: 0x7F0D0010
-			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558416;
+			public const int Oto_cikls = 2131558416;
 			
 			// aapt resource value: 0x7F0D0011
-			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558417;
+			public const int Saldesanas_iekartas_gazes_cikla_shema = 2131558417;
 			
 			// aapt resource value: 0x7F0D0012
-			public const int Tvaiku_iekartas_pamatcikls = 2131558418;
+			public const int Saldesanas_iekartas_gazes_cikls = 2131558418;
+			
+			// aapt resource value: 0x7F0D0013
+			public const int Saldesanas_iekartas_tvaika_cikla_shema = 2131558419;
+			
+			// aapt resource value: 0x7F0D0014
+			public const int Saldesanas_iekartas_tvaika_cikls = 2131558420;
+			
+			// aapt resource value: 0x7F0D0015
+			public const int Siltuma_sukna_shema = 2131558421;
+			
+			// aapt resource value: 0x7F0D0016
+			public const int Temperaturas_sadalijums_caur_vienu_plaksni = 2131558422;
+			
+			// aapt resource value: 0x7F0D0017
+			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558423;
+			
+			// aapt resource value: 0x7F0D0018
+			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558424;
+			
+			// aapt resource value: 0x7F0D0019
+			public const int Tvaiku_iekartas_pamatcikls = 2131558425;
 			
 			static Mipmap()
 			{

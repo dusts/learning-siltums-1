@@ -12,7 +12,9 @@ namespace learning_siltums_1.HardcodedData
 
         static string subscriptX = $"\u2093";
         static string capitalPhiChar = $"\u03A6"; // ņūtona vienādojumam
+        static string captialSigmaChar = $"\u03A3"; // summas zīme
         static string smallAlphaChar = $"\u03B1"; // siltumatdeves koeficients
+        static string smallDeltaChar = $"\u03B4"; // 
         static string smallEtaChar = $"\u03B7"; // lietderības koeficients
         static string smallInfinity = $"\u221E"; // bezgalība
         static string smallLambda = $"\u03BB"; // siltumvadītspējas koeficients
@@ -196,20 +198,22 @@ namespace learning_siltums_1.HardcodedData
         static string a70 = $"";
         static int z70 = Resource.Mipmap.Temperaturas_sadalijums_caur_vienu_plaksni;
         static string q71 = $"Kā var aprēķināt siltumpārejas koeficientu daudzslāņu plāksnei?";
-        static string a71 = $"";
+        static string a71 = $"Siltuma plūsmas blīvumu siltumpāreju caur daudzkārtu sienu aprēķina pēc tādas pašas izteiksmes kā vienkārtas sienas gadījumā, tikai siltumpārejas koeficienta izteiksmē vienas termiskās pertestības vietā jāievieto visu kārtu termisko pretestību summa {captialSigmaChar}({smallDeltaChar}{needsSubscript}i{needsSubscript}/{smallLambda}{needsSubscript}i{needsSubscript}). Tad:";
+        static int z71 = Resource.Mipmap.a71;
         static string q72 = $"Uzzīmēt temperatūras sadalījumu siltumam plūstot caur cilindriskas caurules sienu pie trešās kārtas robežnosacījumiem";
         static string a72 = $"";
-        static int z72 = Resource.Mipmap.blank;
+        static int z72 = Resource.Mipmap.a72;
         static string q73 = $"Kas ir cauruļvadu siltumizolācijas kritiskais biezums?";
         static string a73 = $"";
+        static int z73 = Resource.Mipmap.a73;
         static string q74 = $"Kas ir apribojuma koeficients?";
         static string a74 = $"Izsaka sildvirsmas ribotās puses pilnā laukuma attiecību pret sienas gludās puses laukumu.\n m=S{subscript2}/S{subscript1}.\n (160. lpp.)";
         static string q75 = $"Uzzīmēt temperatūras sadalījuma līkni ķermenī virsmas tuvumā tam dziestot no vienas puses";
         static string a75 = $"";
-        static int z75 = Resource.Mipmap.blank;
+        static int z75 = Resource.Mipmap.a75;
         static string q76 = $"Uzzīmēt temperatūras sadalījuma līkni plāksnē tai dziestot no abām pusēm";
         static string a76 = $"";
-        static int z76 = Resource.Mipmap.blank;
+        static int z76 = Resource.Mipmap.a76;
         static string q77 = $"Kāda ir līdzības skaitļu būtība?";
         static string a77 = $"Tie piešķir konkrētu viennozīmīgumu.\n Divi procesi ir līdzīgi, ja: 1) tie ir kvalitatīvi vienādi; 2) atbilstoši lielumi ir saistīti ar vienādiem līdzības skaitļiem.\n (no pierakstiem)";
         static string q78 = $"Kas ir brīvā konvekcija?";
@@ -217,12 +221,12 @@ namespace learning_siltums_1.HardcodedData
         static string q79 = $"Kas ir piespiedu konvekcija?";
         static string a79 = $"Piespiedu konvekcijā šķidrums vai gāze pārvietojas spiedumu starpības dēļ. Spiedienu starpību var izraisīt vējš, šķidruma līmeņu starpība, ventilatori, sūkņi.\n (177. lpp.)";
         static string q80 = $"Izskaidrot, kā notiek siltumpārnese laminārā plūsmā";
-        static string a80 = $"";
+        static string a80 = $"Laminārā plūsmā siltums tiek nodots tikai vadīšanas ceļā.";
         static string q81 = $"Izskaidrot, kā notiek siltumpārnese turbulentā plūsmā";
-        static string a81 = $"";
+        static string a81 = $"Siltumatdeve notiek gan konvekcijas gan vadīšanas ceļā.";
         static string q82 = $"Uzzīmēt siltumatdeves koeficienta izmaiņas grafiku atkarībā no augstuma brīvai konvekcijai gar vertikālu sienu";
         static string a82 = $"";
-        static int z82 = Resource.Mipmap.blank;
+        static int z82 = Resource.Mipmap.a82;
         static string q83 = $"Kas ir kodolveida kondensācija?";
         static string a83 = $"Ja šķidrums neslapina virsmu vai slapina to tikai daļēji, tad ir pilienu kondensācija (sauc arī par kondensāciju rasas veidā), kad kondensāts rodas atsevišķu pilienu veidā. \n (189. lpp.)";
         static string q84 = $"Kas ir plēves veida kondensācija?";
@@ -255,7 +259,7 @@ namespace learning_siltums_1.HardcodedData
         static string a97 = $"Pieaugot leņķim {smallOmegaChar}, starojuma intensitāte samazinās.\n (202.-203. lpp. + no pierakstiem)";
         static string q98 = $"Uzzīmēt skici, kas paskaidro ķermeņu savstarpējo apstarošanos";
         static string a98 = $"";
-        static int z98 = Resource.Mipmap.blank;
+        static int z98 = Resource.Mipmap.a98;
 
         public static List<QuestionAndAnswers> GetQnAList()
         {
@@ -331,9 +335,9 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 68, Question = q68, Answer = a68, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 69, Question = q69, Answer = a69, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 70, Question = q70, Answer = a70, AnswerImage = z70, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 71, Question = q71, Answer = a71, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 71, Question = q71, Answer = a71, AnswerImage = z71, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 72, Question = q72, Answer = a72, AnswerImage = z72, Points = 1 },
-                new QuestionAndAnswers(){ QuestionId = 73, Question = q73, Answer = a73, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 73, Question = q73, Answer = a73, AnswerImage = z73, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 74, Question = q74, Answer = a74, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 75, Question = q75, Answer = a75, AnswerImage = z75, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 76, Question = q76, Answer = a76, AnswerImage = z76, Points = 1 },
