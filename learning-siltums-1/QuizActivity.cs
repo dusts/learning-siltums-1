@@ -41,6 +41,12 @@ namespace learning_siltums_1
             {
                 StartActivity(new Intent(this, typeof(MainActivity)));
             };
+
+            FloatingActionButton fab2 = FindViewById<FloatingActionButton>(Resource.Id.fabs2);
+            fab2.Click += (sender, e) =>
+            {
+                StartActivity(new Intent(this, typeof(Siltums2Activity)));
+            };
         }
     }
 }

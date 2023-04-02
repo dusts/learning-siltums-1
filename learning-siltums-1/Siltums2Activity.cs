@@ -6,28 +6,46 @@ using AndroidX.RecyclerView.Widget;
 using learning_siltums_1.HardcodedData;
 using Google.Android.Material.FloatingActionButton;
 using Android.Content;
+using Xamarin.Essentials;
+using Android.Media;
 
 namespace learning_siltums_1
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : Activity
+    public class Siltums2Activity : Activity
     {
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager mLayoutManager;
         QuestionsAndAnswersAdapter mAdapter;
-        Siltums1QnAData mData;
+        Siltums2QnAData mData;
+
+        //protected MediaPlayer player;
+        //public void StartPlayer()
+        //{
+        //    if (player == null)
+        //    {
+        //        player = new MediaPlayer();
+        //    }
+        //    else
+        //    {
+        //        player.Reset();
+        //        player.SetDataSource();
+        //        player.Prepare();
+        //        player.Start();
+        //    }
+        //}
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            SetContentView(Resource.Layout.activity_main);
+            Platform.Init(this, savedInstanceState);
+            SetContentView(Resource.Layout.activity_siltums2);
 
             // Prepare the data source:
-            mData = new Siltums1QnAData();
+            mData = new Siltums2QnAData();
 
             // Set our view from the "main" layout resource:
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.activity_siltums2);
 
             // Get our RecyclerView layout:
             mRecyclerView = FindViewById<RecyclerView>(Resource.Id.siltumsQnAList);
@@ -41,17 +59,19 @@ namespace learning_siltums_1
             // Plug the adapter into the RecyclerView:
             mRecyclerView.SetAdapter(mAdapter);
 
+            FloatingActionButton fabs1 = FindViewById<FloatingActionButton>(Resource.Id.fab_quiz);
+            fabs1.Click += (sender, e) =>
+            {
+                StartActivity(new Intent(this, typeof(MainActivity)));
+            };
+
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += (sender, e) =>
             {
                 StartActivity(new Intent(this, typeof(QuizActivity)));
             };
 
-            FloatingActionButton fab2 = FindViewById<FloatingActionButton>(Resource.Id.fabs2);
-            fab2.Click += (sender, e) =>
-            {
-                StartActivity(new Intent(this, typeof(Siltums2Activity)));
-            };
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

@@ -66,8 +66,10 @@
     <Compile Include="HardcodedData\QuestionAndAnswers.cs" />
     <Compile Include="HardcodedData\QuestionsAndAnswersQuizAdapter.cs" />
     <Compile Include="HardcodedData\QuestionsAndAnswersAdapter.cs" />
+    <Compile Include="HardcodedData\Siltums2QnAData.cs" />
     <Compile Include="HardcodedData\Siltums1QnADataQuiz.cs" />
     <Compile Include="HardcodedData\Siltums1QnAData.cs" />
+    <Compile Include="Siltums2Activity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="QuizActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -486,6 +488,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\a98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_siltums2.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

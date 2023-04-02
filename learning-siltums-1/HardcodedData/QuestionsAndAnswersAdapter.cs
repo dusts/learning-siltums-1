@@ -8,7 +8,7 @@ namespace learning_siltums_1.HardcodedData
     public class QuestionsAndAnswersAdapter : RecyclerView.Adapter
     {
         public Siltums1QnAData mData;
-
+        
         static string needsSuperscript = "Ӿ";
         static string needsSubscript = "ӿ";
 

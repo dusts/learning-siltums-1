@@ -42,6 +42,8 @@ namespace learning_siltums_1.HardcodedData
         static string subscript_leftParenthesis = $"\u208D";
         static string subscript_rightParenthesis = $"\u208E";
 
+        #region siltums1
+
         static string q1 = $"Kas ir izolēta termodinamiska sistēma?";
         static string a1 = $"Par izolētu sauc tādu termodinamisko sistēmu, kurai nav mijiedarbības ar apkārtējo vidi.\n (9.lpp.)";
         static string q2 = $"Kas ir neizolēta termodinamiska sistēma?";
@@ -261,6 +263,91 @@ namespace learning_siltums_1.HardcodedData
         static string a98 = $"";
         static int z98 = Resource.Mipmap.a98;
 
+        #endregion
+
+        #region siltums2
+
+        static string s2_q1 = $"Kurināmie, to iedalījums, sastāvs.";
+        static string s2_a1 = $"";
+        static string s2_q2 = $"Kurināmo degšanas reakcijas. Gaisa pārpilnības koeficients.";
+        static string s2_a2 = $"";
+        static string s2_q3 = $"Kurināmā augstākā un zemākā sildspēja. To noteikšana. Nosacītais kurināmais.";
+        static string s2_a3 = $"";
+        static string s2_q4 = $"Akmeņogles: to veidi, izcelsme, sastāvs, sildspēja.";
+        static string s2_a4 = $"";
+        static string s2_q5 = $"Kūdra: tās izcelsme, ieguve, sastāvs, sildspēja. Kūdras briketes.";
+        static string s2_a5 = $"";
+        static string s2_q6 = $"Koksnes kurināmie: to sastāvs, sildspēja, mitrums.";
+        static string s2_a6 = $"";
+        static string s2_q7 = $"Naftas pārtvaice, tajā iegūtie produkti, to izmantošana.";
+        static string s2_a7 = $"";
+        static string s2_q8 = $"Benzīni, to īpašības, markas. Sastāvs. Oktānskaitlis, tā noteikšana.";
+        static string s2_a8 = $"";
+        static string s2_q9 = $"Dīzeļdegviela, tās īpašības, markas. Sastāvs. Cetānskaitlis.";
+        static string s2_a9 = $"";
+        static string s2_q10 = $"Mazuts un šķidrais krāšņu kurināmais (destilāts), sastāvs, īpašības, ieguve, izmantošana.";
+        static string s2_a10 = $"";
+        static string s2_q11 = $"Metilspirts, tā iegūšana, īpašības, izmantošana.";
+        static string s2_a11 = $"";
+        static string s2_q12 = $"Etilspirts, tā iegūšana, īpašības, izmantošana.";
+        static string s2_a12 = $"";
+        static string s2_q13 = $"Dabasgāze, tās sastāvs, īpašības.";
+        static string s2_a13 = $"";
+        static string s2_q14 = $"Metāns, tā iegūšana no sadzīves atkritumiem.";
+        static string s2_a14 = $"";
+        static string s2_q15 = $"Metāna ieguve no dzīvnieku mēsliem.";
+        static string s2_a15 = $"";
+        static string s2_q16 = $"Sašķidrinātā gāze (propāns-butāns), sastāvs, īpašības.";
+        static string s2_a16 = $"";
+        static string s2_q17 = $"Koksnes gazifikācijas process, iegūtās frakcijas. Singāzes īpašības.";
+        static string s2_a17 = $"";
+        static string s2_q18 = $"Insineratori, to uzbūve, veidi, darbība.";
+        static string s2_a18 = $"";
+        static string s2_q19 = $"Liesmas izplatīšanās ātrums (normālais, turbulentais). Laukumu likums.";
+        static string s2_a19 = $"";
+        static string s2_q20 = $"Liesmas normālās izplatīšanās vienādojums. Faktori, kas ietekmē liesmas izplatīšanos.";
+        static string s2_a20 = $"";
+        static string s2_q21 = $"Gāzu degšanas veidi. Viendabīga lamināra gāzes degšana.";
+        static string s2_a21 = $"";
+        static string s2_q22 = $"Viendabīga turbulenta gāzes degšana.";
+        static string s2_a22 = $"";
+        static string s2_q23 = $"Difūza lamināra gāzes degšana.";
+        static string s2_a23 = $"";
+        static string s2_q24 = $"Difūza turbulenta gāzes degšana.";
+        static string s2_a24 = $"";
+        static string s2_q25 = $"Gāzes degšana nepietiekošā gaisa daudzumā un ar pakāpjveida gaisa padevi.";
+        static string s2_a25 = $"";
+        static string s2_q26 = $"Gāzes degļi bez iepriekšējas maisījuma sajaukšanas, ar iepriekšēju sajaukšanos, ar daļēju iepriekšēju sajaukšanos.";
+        static string s2_a26 = $"";
+        static string s2_q27 = $"Šķidrā kurināmā degšana pa brīvu virsmu, tās stadijas, raksturojums.";
+        static string s2_a27 = $"";
+        static string s2_q28 = $"Degvielas piliena degšana, šķidrā kurināmā degšana lāpā.";
+        static string s2_a28 = $"";
+        static string s2_q29 = $"Šķidrā kurināmā degļu iedalījums. Mehāniskie degļi, to uzbūve, darbība, priekšrocības, trūkumi.";
+        static string s2_a29 = $"";
+        static string s2_q30 = $"Rotācijas degļi šķidram kurināmam, to uzbūve, darbība, priekšrocības, trūkumi.";
+        static string s2_a30 = $"";
+        static string s2_q31 = $"Šķidrā kurināmā pneimatiskie (tvaika - mehāniskie) degļi, to uzbūve, darbība priekšrocības, trūkumi.";
+        static string s2_a31 = $"";
+        static string s2_q32 = $"Kurtuvju klasifikācija, to šķērsgriezuma un tilpuma termiskā slodze.";
+        static string s2_a32 = $"";
+        static string s2_q33 = $"Cietā kurināmā sadedzināšanas metodes (lāpā, virpuļveida, slāņveida).";
+        static string s2_a33 = $"";
+        static string s2_q34 = $"Cietā kurināmā degšana, tās stadijas. Faktori, kas nosaka degšanas intensitāti.";
+        static string s2_a34 = $"";
+        static string s2_q35 = $"Cietā kurināmā heterogēnas degšanas teorija.";
+        static string s2_a35 = $"";
+        static string s2_q37 = $"Ciklonkurtuves, to veidi, uzbūve, īpašības.";
+        static string s2_a37 = $"";
+        static string s2_q38 = $"Cieto kurināmo sadedzināšana slānī. Nemehanizētās ārdu kurtuves.";
+        static string s2_a38 = $"";
+        static string s2_q39 = $"Mehanizētās ārdu kurtuves.";
+        static string s2_a39 = $"";
+        static string s2_q40 = $"Cietā kurināmā sadedzināšana “verdošā slānī”.";
+        static string s2_a40 = $"";
+
+        #endregion
+
         public static List<QuestionAndAnswers> GetQnAList()
         {
             var res = new List<QuestionAndAnswers>()
@@ -363,6 +450,54 @@ namespace learning_siltums_1.HardcodedData
                 new QuestionAndAnswers(){ QuestionId = 96, Question = q96, Answer = a96, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 97, Question = q97, Answer = a97, AnswerImage = zBlank, Points = 1 },
                 new QuestionAndAnswers(){ QuestionId = 98, Question = q98, Answer = a98, AnswerImage = z98, Points = 1 },
+            };
+
+            return res;
+        }
+
+        public static List<QuestionAndAnswers> GetS2QnAList()
+        {
+            var res = new List<QuestionAndAnswers>()
+            {
+                new QuestionAndAnswers(){ QuestionId = 1, Question = s2_q1, Answer = s2_a1, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 2, Question = s2_q2, Answer = s2_a2, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 3, Question = s2_q3, Answer = s2_a3, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 4, Question = s2_q4, Answer = s2_a4, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 5, Question = s2_q5, Answer = s2_a5, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 6, Question = s2_q6, Answer = s2_a6, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 7, Question = s2_q7, Answer = s2_a7, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 8, Question = s2_q8, Answer = s2_a8, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 9, Question = s2_q9, Answer = s2_a9, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 10, Question = s2_q10, Answer = s2_a10, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 11, Question = s2_q11, Answer = s2_a11, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 12, Question = s2_q12, Answer = s2_a12, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 13, Question = s2_q13, Answer = s2_a13, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 14, Question = s2_q14, Answer = s2_a14, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 15, Question = s2_q15, Answer = s2_a15, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 16, Question = s2_q16, Answer = s2_a16, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 17, Question = s2_q17, Answer = s2_a17, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 18, Question = s2_q18, Answer = s2_a18, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 19, Question = s2_q19, Answer = s2_a19, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 20, Question = s2_q20, Answer = s2_a20, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 21, Question = s2_q21, Answer = s2_a21, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 22, Question = s2_q22, Answer = s2_a22, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 23, Question = s2_q23, Answer = s2_a23, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 24, Question = s2_q24, Answer = s2_a24, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 25, Question = s2_q25, Answer = s2_a25, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 26, Question = s2_q26, Answer = s2_a26, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 27, Question = s2_q27, Answer = s2_a27, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 28, Question = s2_q28, Answer = s2_a28, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 29, Question = s2_q29, Answer = s2_a29, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 30, Question = s2_q30, Answer = s2_a30, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 31, Question = s2_q31, Answer = s2_a31, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 32, Question = s2_q32, Answer = s2_a32, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 33, Question = s2_q33, Answer = s2_a33, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 34, Question = s2_q34, Answer = s2_a34, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 35, Question = s2_q35, Answer = s2_a35, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 37, Question = s2_q37, Answer = s2_a37, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 38, Question = s2_q38, Answer = s2_a38, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 39, Question = s2_q39, Answer = s2_a39, AnswerImage = zBlank, Points = 1 },
+                new QuestionAndAnswers(){ QuestionId = 30, Question = s2_q40, Answer = s2_a40, AnswerImage = zBlank, Points = 1 },
             };
 
             return res;
