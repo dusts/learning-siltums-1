@@ -7,7 +7,6 @@ using learning_siltums_1.HardcodedData;
 using Google.Android.Material.FloatingActionButton;
 using Android.Content;
 using Xamarin.Essentials;
-using Android.Media;
 
 namespace learning_siltums_1
 {
@@ -93,7 +92,7 @@ namespace learning_siltums_1
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }

@@ -56,8 +56,9 @@ namespace learning_siltums_1.HardcodedData
             {
                 int[,] supIndexArray = new int[supSpanCount, 2];
                 FillInIndexArray(text, supIndexArray, needsSuperscript);
+                var l = supIndexArray.GetLength(0);
 
-                for (int i = 0; i < supSpanCount; i++)
+                for (int i = 0; i < l; i++)
                 {
                     sb.SetSpan(new SuperscriptSpan(), supIndexArray[i, 0], supIndexArray[i, 1], SpanTypes.ExclusiveExclusive);
                     sb.SetSpan(new RelativeSizeSpan(0.75f), supIndexArray[i, 0], supIndexArray[i, 1], SpanTypes.ExclusiveExclusive);
@@ -71,8 +72,8 @@ namespace learning_siltums_1.HardcodedData
                 int[,] subIndexDictionary = new int[subSpanCount, 2];
 
                 FillInIndexArray(sb.ToString(), subIndexDictionary, needsSubscript);
-
-                for (int i = 0; i < subSpanCount; i++)
+                var l = subIndexDictionary.GetLength(0);
+                for (int i = 0; i < l; i++)
                 {
                     sb.SetSpan(new SubscriptSpan(), subIndexDictionary[i, 0], subIndexDictionary[i, 1], SpanTypes.ExclusiveExclusive);
                     sb.SetSpan(new RelativeSizeSpan(0.75f), subIndexDictionary[i, 0], subIndexDictionary[i, 1], SpanTypes.ExclusiveExclusive);
@@ -93,11 +94,11 @@ namespace learning_siltums_1.HardcodedData
 
             while (true)
             {
-                var index = text.IndexOf(spanTextDelimiters, startIndex);
+                var index = text.IndexOf(spanTextDelimiters, startIndex, System.StringComparison.Ordinal);
                 if (index == -1) break;
 
                 startIndex = index + 1;
-                secondIndex = text.IndexOf(needsSubscript, startIndex);
+                secondIndex = text.IndexOf(spanTextDelimiters, startIndex);
                 supIndexDictionary[arrayIndex, 0] = startIndex;
                 supIndexDictionary[arrayIndex, 1] = secondIndex;
                 arrayIndex++;
