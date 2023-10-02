@@ -4535,19 +4535,22 @@ namespace learning_siltums_1
 			public const int Saldesanas_iekartas_tvaika_cikls = 2131558420;
 			
 			// aapt resource value: 0x7F0D0015
-			public const int Siltuma_sukna_shema = 2131558421;
+			public const int shema_naftas_partveice = 2131558421;
 			
 			// aapt resource value: 0x7F0D0016
-			public const int Temperaturas_sadalijums_caur_vienu_plaksni = 2131558422;
+			public const int Siltuma_sukna_shema = 2131558422;
 			
 			// aapt resource value: 0x7F0D0017
-			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558423;
+			public const int Temperaturas_sadalijums_caur_vienu_plaksni = 2131558423;
 			
 			// aapt resource value: 0x7F0D0018
-			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558424;
+			public const int Tvaiku_iekartas_cikls_ar_atkartotu_parkarsesanu = 2131558424;
 			
 			// aapt resource value: 0x7F0D0019
-			public const int Tvaiku_iekartas_pamatcikls = 2131558425;
+			public const int Tvaiku_iekartas_pamatcikla_shema = 2131558425;
+			
+			// aapt resource value: 0x7F0D001A
+			public const int Tvaiku_iekartas_pamatcikls = 2131558426;
 			
 			static Mipmap()
 			{
